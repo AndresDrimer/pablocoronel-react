@@ -2,9 +2,82 @@
 
 #root {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   padding: 0;
   width:100%;
   font-family: 'Open Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: azure;
+}
+.--about-welcome-text-container{
+  margin-top: 5rem;
+}
+.--about-title{
+  font-size: 3rem;
+  margin-top:-0.3rem;
+}
+.--about-subtitle{
+  color: grey;
+  font-weight: 600;;
+}
+.--about-btn-select{
+  background-color: white;
+  border-radius:50%;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  padding:10px;
+  
+}
+.--about-btn-select:hover{
+  background-color: rgb(6, 101, 169);
+  
+}
+.--about-btn-select:active{
+  background-color: gray;
+  
+}
+.--about-conditional-text-containers{
+  max-width: 600px;
+  margin: auto;
+  text-align: justify;
+  padding:40px;
+  
+}
+.--about-prizes-lis{
+  list-style:none;
+}
+.--about-prizes-opus-title{
+  color:rgb(6, 101, 169);
+}
+.--about-container-for-two-elements{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.--about-photo{
+  width:500px; 
+}
+.--about-cont-img{
+  margin: auto;
+}
+@media(width<700px){
+  .--about-photo{
+    width:400px; 
+  }
+}
+@media(width<900px){
+  .--about-container-for-two-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .--about-photo{
+    width:300px; 
+  }
 }

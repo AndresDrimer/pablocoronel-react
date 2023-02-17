@@ -9,7 +9,9 @@ export default {
     {category:"vita",id:4},
     {category:"contact",id:5},
   ],
-  aboutPhoto: "./src/assets/about-photo.jpg",
+  aboutPhoto: "../../src/assets/aboutmephoto-nobg.png",
+  logoPhoto: "../../src/assets/logo.png",
+  awardsLogo: "../../src/assets/award.svg",
   aboutmeText:
     "Hi, I'm Pablo.My interest in cinematographic processes has led me, during my 20 years in the audiovisual world, to develop my professional skills in editing, photography and directing. I have directed music videos institutional videos, documentaries, tv series, I have shot live concerts, documentaries, tv shows and I have edited all kinds of audiovisual formats (fiction films, tv shows, tv series, music videos, video art, etc...); but my desire to tell stories focused me to make my own documentary films. As a filmmaker, telling documentary stories is what motivates me the most. I love my job and I take every project as a new challenge. I like my work to be as perfect as possible according to the tools and time available for each of them.",
   awards: [
