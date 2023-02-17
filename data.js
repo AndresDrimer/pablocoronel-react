@@ -3,7 +3,7 @@ export default {
   name: "Pablo Coronel",
   subtitle: "video maker & editor",
   sections: [
-    {category: "about me", id: 1 },
+    {category: "about", id: 1 },
     {category: "works", id:2},
     {category:"services",id:3},
     {category:"vita",id:4},
@@ -13,23 +13,23 @@ export default {
   logoPhoto: "../../src/assets/logo.png",
   awardsLogo: "../../src/assets/award.svg",
   aboutmeText:
-    "Hi, I'm Pablo.My interest in cinematographic processes has led me, during my 20 years in the audiovisual world, to develop my professional skills in editing, photography and directing. I have directed music videos institutional videos, documentaries, tv series, I have shot live concerts, documentaries, tv shows and I have edited all kinds of audiovisual formats (fiction films, tv shows, tv series, music videos, video art, etc...); but my desire to tell stories focused me to make my own documentary films. As a filmmaker, telling documentary stories is what motivates me the most. I love my job and I take every project as a new challenge. I like my work to be as perfect as possible according to the tools and time available for each of them.",
+    "My interest in cinematographic processes has led me, during my 20 years in the audiovisual world, to develop my professional skills in editing, photography and directing. I have directed music videos institutional videos, documentaries, tv series, I have shot live concerts, documentaries, tv shows and I have edited all kinds of audiovisual formats (fiction films, tv shows, tv series, music videos, video art, etc...); but my desire to tell stories focused me to make my own documentary films. As a filmmaker, telling documentary stories is what motivates me the most. I love my job and I take every project as a new challenge. I like my work to be as perfect as possible according to the tools and time available for each of them.",
   awards: [
     {
       opus: "Cumbia que te vas de ronda",
       opusSubtitle: "feature documentary",
       prizes: [
-        {
+        { id:1,
           prizeName: "Jury Special Award and Best in Music Award",
           date: "2021",
           place: "Culture Cinema Film Festival, India",
         },
-        {
+        {id:2,
           prizeName: "Audience Award",
           date: "2021",
           place: "Latino and Native American Fiilm Festival, USA",
         },
-        {
+        {id:3,
           prizeName: "Audience Award",
           date: "2021",
           place: "Rencontres du cinéma sud-américain, France",
@@ -73,16 +73,18 @@ export default {
 
   works: [
     {
+        id:1,
       title: "Cumbia que te vas de Ronda",
       subtitle: "2020, feature documentary",
       description:
-        " Cumbia que te vas de Ronda is a documentary road-movie that follows Pablo Coronel and a group of film-musicians who travel tracing the paths of la Cumbia as a musical phenomenon. With Buenos Aires as its starting point, the documentary covers corners of Latin America, where la Cumbia was born and grew up. Pioneers and references - from Totó la Momposina, to Los Mirlos, Celso Piña, Coco Barcala give their testimony, sharing their knowledge and passion for la Cumbia. Pablo’s dreams is to travel with his team to the East and take la Cumbia there where the culture and the languages spoken are completely different. The group travels to Japan, Vietnam, The Philippines and Cambodia, where la Cumbia is almost unknow, but which will no longer be since Pablo and his team will be willing to share its magic and power with the new public.",
+        " CUMBIA QUE TE VAS DE RONDA is a documentary road-movie that follows Pablo Coronel and a group of film-musicians who travel tracing the paths of la Cumbia as a musical phenomenon. With Buenos Aires as its starting point, the documentary covers corners of Latin America, where la Cumbia was born and grew up. Pioneers and references - from Totó la Momposina, to Los Mirlos, Celso Piña, Coco Barcala give their testimony, sharing their knowledge and passion for la Cumbia. Pablo’s dreams is to travel with his team to the East and take la Cumbia there where the culture and the languages spoken are completely different. The group travels to Japan, Vietnam, The Philippines and Cambodia, where la Cumbia is almost unknow, but which will no longer be since Pablo and his team will be willing to share its magic and power with the new public.",
       trailerUrl: "https://www.youtube.com/watch?v=Bh0G2_2xf4U",
       criticText:
         " ´I feel free when I listen to Cumbia´,says Katsumi Tanaka,guitarist of Minyo Crusaders, a Big Band from Tokyo that mixes Cumbia with Japanese folk. Cumbia Que Te Vas De Ronda proposes a journey across different continents in search of some answers. What is Cumbia and why does it generate such joy? In this vivid experimental movie recorded between Argentina, Bolivia, Colombia, Portugal, Philippines, Vietnam and who knows where else, we’ll find notes and testimonies about Memory and Identity, Rites and the Sun, Afro Stanzas and Drum Beats. Cumbia sounds wild, and therein lies its virtue: it doesn’t need expert dancers. Here, there and everywhere, bodies fill with energy when the Cumbia rhythms sneaks in, even across oceans and distant lands, the feeling is always the same. (Hernán Panessi)",
       poster: "./src/assets/poster-cqtvdr.jpeg",
     },
     {
+        id:2,
       title: "Cumbia la Reina",
       subtitle: "2015, feature documentary",
       description:
@@ -95,77 +97,75 @@ export default {
     },
   ],
   otherWorks: [
-    {
+    { id:1,
       title: "Prosap",
       subtitle: "Ministry of Agriculture, Argentina",
       description: "",
-      trailerUrl: "https://www.youtube.com/watch?v=YfID6E3z-Ok",
+      trailerUrl:"https://www.youtube.com/embed/YfID6E3z-Ok?controls=0",
       criticText: " ",
       poster: "",
     },
-    {
+    { id:2,
       title: "Estampida",
       subtitle: "León Ferrari Foundation",
       description: "",
-      trailerUrl:
-        "https://www.youtube.com/watch?v=CtX7W5mqZKQ&list=PL78809F5567E1ACE1&in- dex=14",
+      trailerUrl:"https://www.youtube.com/embed/CtX7W5mqZKQ?controls=0",
       criticText: " ",
       poster: "",
     },
-    {
+    { id:3,
       title: "Denver Farma SA",
-      subtitle: "",
+      subtitle: " ",
       description: "",
-      trailerUrl: "https://www.youtube.com/watch?v=JxVtdUIjDGM&t=115s",
+      trailerUrl:"https://www.youtube.com/embed/JxVtdUIjDGM?controls=0&amp;start=115" ,
       criticText: "",
       poster: "",
     },
-    {
+    {id:4,
       title: "90’s Pop Tour",
       subtitle: "VEVO",
       description: "",
-      trailerUrl:
-        "https://www.youtube.com/playlist?list=PLKXnN69qB76kEArKusNOrsOQlqbLvXcO5",
+      trailerUrl:"https://www.youtube.com/embed/K4IEJM3XvXE?controls=0",
       criticText: "",
       poster: "",
     },
-    {
+    {id: 5,
       title: "Exploración Maya",
       subtitle: "History Channel, México",
       description: "",
-      trailerUrl: "https://www.youtube.com/watch?v=RD51nFxfW5k",
+      trailerUrl: "https://www.youtube.com/embed/RD51nFxfW5k?controls=0&amp;start=2k",
       criticText: "",
       poster: "",
     },
-    {
+    {id:6,
       title: "Santiagueños",
       subtitle: "Canal Encuentro, Argentina ",
       description: "",
-      trailerUrl: "https://www.youtube.com/watch?v=5m0UUrE4lf8",
+      trailerUrl: "https://www.youtube.com/embed/5m0UUrE4lf8?controls=0&amp",
       criticText: "",
       poster: "",
     },
-    {
+    {id:7,
       title: "Ter Pressa",
       subtitle: "Diogo Picão",
       description: "",
-      trailerUrl: "https://www.youtube.com/watch?v=aX9kNXr20-E",
+      trailerUrl: "https://www.youtube.com/embed/aX9kNXr20-E?controls=0&amp",
       criticText: "",
       poster: "",
     },
-    {
+    {id:8,
       title: "Malagueña",
       subtitle: "Mariachi Sol de Lisboa",
       description: "",
-      trailerUrl: "https://www.youtube.com/watch?v=_TXC8Ho8tH8",
+      trailerUrl: "https://www.youtube.com/embed/_TXC8Ho8tH8?controls=0",
       criticText: "",
       poster: "",
     },
-    {
+    {id:9,
       title: "Filmmaker Reel 2022",
-      subtitle: "",
+      subtitle: " ",
       description: "",
-      trailerUrl: "https://vimeo.com/758497058",
+      trailerUrl: "https://player.vimeo.com/video/758497058?h=8ab41ed5ad",
       criticText: "",
       poster: "",
     },

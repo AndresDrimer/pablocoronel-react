@@ -12,3 +12,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body{
+  margin:0
+}
+video{
+  z-index: -2;
+}

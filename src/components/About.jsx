@@ -11,13 +11,13 @@ export default function About(props) {
     return (
       <>
         <ul>
-          <li className="--about-prizes-lis">
-            <strong className="--about-prizes-opus-title">{it.opus} </strong>
+          <li className="--about-prizes-lis" >
+            <strong className="--about-prizes-opus-title">{it.opus.toUpperCase()} </strong><br/>
             <em>({it.opusSubtitle})</em>
           </li>
           {it.prizes.map((it) => {
             return (
-              <p>
+              <p className="--about-awards-paragraph" key={it.id}>
                 · {it.date} // <strong>{it.prizeName}</strong> - {it.place}
               </p>
             );
@@ -29,8 +29,8 @@ export default function About(props) {
   });
 
   return (
-    <>
-      <div className="--about-welcome-text-container">
+    <div className="--about-total-wrapper">
+      <div className="--about-welcome-text-container" id="about">
         <h3 className="--about-subtitle">HELLO I´M PABLO </h3>
         <h2 className="--about-title">WELCOME</h2>
       </div><div className="--about-two-buttons-container">
@@ -56,8 +56,9 @@ export default function About(props) {
         <div className="--about-cont-img">
         <img 
         src={props.aboutPhoto} 
-        className="--about-photo"/></div>
+        className="--about-photo"
+        /></div>
       </div>
-    </>
+    </div>
   );
 }

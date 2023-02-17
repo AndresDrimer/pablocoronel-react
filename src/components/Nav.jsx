@@ -3,7 +3,7 @@ import { nanoid } from "nanoid";
 
 export default function Nav(props) {
   const makeLis = props.sections.map((it) => {
-    return <li key={it.id}><a href="#">{it.category.toUpperCase()}</a></li>;
+    return <li key={it.id}><a href={`#${it.category}`}>{it.category.toUpperCase()}</a></li>;
   });
 
   return (

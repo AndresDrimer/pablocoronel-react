@@ -5,6 +5,7 @@ import data from '../data.js'
 import './App.css'
 import VideoBackground from './components/VideoBackground'
 import About from './components/About'
+import Works from './components/Works'
 
 function App() {
   
@@ -23,6 +24,10 @@ function App() {
      awardsLogo={data.awardsLogo}
      aboutmeText={data.aboutmeText}
      awards={data.awards}
+     />
+     <Works 
+     works={data.works}
+     otherWorks={data.otherWorks}
      />
     </div>
   )
