@@ -63,6 +63,12 @@ a {
   flex-direction: row;
   align-items: center;
 }
+@media(width<400px){
+  .--about-container-for-two-elements { 
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .--about-photo {
   width: 400px;
 }

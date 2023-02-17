@@ -11,8 +11,11 @@ export default function About(props) {
     return (
       <>
         <ul>
-          <li className="--about-prizes-lis" >
-            <strong className="--about-prizes-opus-title">{it.opus.toUpperCase()} </strong><br/>
+          <li className="--about-prizes-lis">
+            <strong className="--about-prizes-opus-title">
+              {it.opus.toUpperCase()}{" "}
+            </strong>
+            <br />
             <em>({it.opusSubtitle})</em>
           </li>
           {it.prizes.map((it) => {
@@ -33,17 +36,17 @@ export default function About(props) {
       <div className="--about-welcome-text-container">
         <h3 className="--about-subtitle">HELLO I´M PABLO </h3>
         <h2 className="--about-title">WELCOME</h2>
-      </div><div className="--about-two-buttons-container">
-          <button className="--about-btn-select" onClick={toggleText}>
-            <img
-              src={textShown ? props.logoPhoto : props.awardsLogo}
-              width="50px"
-              height="50px"
-            />
-          </button>
-        </div>
+      </div>
+      <div className="--about-two-buttons-container">
+        <button className="--about-btn-select" onClick={toggleText}>
+          <img
+            src={textShown ? props.logoPhoto : props.awardsLogo}
+            width="50px"
+            height="50px"
+          />
+        </button>
+      </div>
       <div className="--about-container-for-two-elements">
-        
         <div className="--about-conditional-text-containers">
           <h4 className="--about-continional-text-title">
             {textShown ? "About me" : "Awards"}
@@ -54,10 +57,8 @@ export default function About(props) {
           {!textShown && awardsText}
         </div>
         <div className="--about-cont-img">
-        <img 
-        src={props.aboutPhoto} 
-        className="--about-photo"
-        /></div>
+          <img src={props.aboutPhoto} className="--about-photo" />
+        </div>
       </div>
     </div>
   );
