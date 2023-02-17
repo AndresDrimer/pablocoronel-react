@@ -29,8 +29,8 @@ export default function About(props) {
   });
 
   return (
-    <div className="--about-total-wrapper">
-      <div className="--about-welcome-text-container" id="about">
+    <div className="--about-total-wrapper" id="about">
+      <div className="--about-welcome-text-container">
         <h3 className="--about-subtitle">HELLO I´M PABLO </h3>
         <h2 className="--about-title">WELCOME</h2>
       </div><div className="--about-two-buttons-container">

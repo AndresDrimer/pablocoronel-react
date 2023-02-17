@@ -9,7 +9,7 @@ export default {
     {category:"vita",id:4},
     {category:"contact",id:5},
   ],
-  aboutPhoto: "../../src/assets/aboutmephoto-nobg.png",
+  aboutPhoto: "/aboutmephoto-nobg.png",
   logoPhoto: "../../src/assets/logo.png",
   awardsLogo: "../../src/assets/award.svg",
   aboutmeText:
