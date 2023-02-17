@@ -11,7 +11,7 @@ export default {
   ],
   aboutPhoto: "/aboutmephoto-nobg.png",
   logoPhoto: "/logo.png",
-  awardsLogo: "../../src/assets/award.svg",
+  awardsLogo: "/award.svg",
   posterVideoThumbnail: "/poster-video-thumbnail.png",
   aboutmeText:
     "My interest in cinematographic processes has led me, during my 20 years in the audiovisual world, to develop my professional skills in editing, photography and directing. I have directed music videos institutional videos, documentaries, tv series, I have shot live concerts, documentaries, tv shows and I have edited all kinds of audiovisual formats (fiction films, tv shows, tv series, music videos, video art, etc...); but my desire to tell stories focused me to make my own documentary films. As a filmmaker, telling documentary stories is what motivates me the most. I love my job and I take every project as a new challenge. I like my work to be as perfect as possible according to the tools and time available for each of them.",
@@ -82,7 +82,7 @@ export default {
       trailerUrl: "https://www.youtube.com/watch?v=Bh0G2_2xf4U",
       criticText:
         " ´I feel free when I listen to Cumbia´,says Katsumi Tanaka,guitarist of Minyo Crusaders, a Big Band from Tokyo that mixes Cumbia with Japanese folk. Cumbia Que Te Vas De Ronda proposes a journey across different continents in search of some answers. What is Cumbia and why does it generate such joy? In this vivid experimental movie recorded between Argentina, Bolivia, Colombia, Portugal, Philippines, Vietnam and who knows where else, we’ll find notes and testimonies about Memory and Identity, Rites and the Sun, Afro Stanzas and Drum Beats. Cumbia sounds wild, and therein lies its virtue: it doesn’t need expert dancers. Here, there and everywhere, bodies fill with energy when the Cumbia rhythms sneaks in, even across oceans and distant lands, the feeling is always the same. (Hernán Panessi)",
-      poster: "./src/assets/poster-cqtvdr.jpeg",
+      poster: "/poster-cqtvdr.jpeg",
     },
     {
         id:2,
@@ -94,7 +94,7 @@ export default {
         "https://www.cinemargentino.com/films/914988721-cumbia-la-reina",
       criticText:
         "Knees are free. Nobody lives without the experience of cumbia. Anyone who wants to know what it's all about should go dancing. Cumbia is the princess of the street, a hammock for children, the popular music of Latin America. It makes you have fun, it takes the sadness out of you. So, in 1955, Los Wawancó were already making everyone dance. Cumbia la reina, a documentary that honours Argentinean tropical music, tells the story of this beginning and its development. The authorities? El Cuarteto Imperial, Los del Trópico, Koli Arce and El Quinteto Imperial. The influence of Colombian cumbia, the arrival of accordion music, the importance of the interior of the country, the democracy of the loudspeaker, the session musicians, the baby faces of the 90s and the word of the poor neighbourhood. Cumbia la reina is pure emotion. And it is also the centrifugal testimony of sincere hearts, of people with joy, of the hottest, most popular and bewitching souls. That is why it is logical: if there is cumbia there will -always- be celebration. (Hernán Panessi)",
-      poster: "./src/assets/cumbia-la-reina-poster.png",
+      poster: "/cumbia-la-reina-poster.png",
     },
   ],
   otherWorks: [
