@@ -3,11 +3,10 @@ export default {
   name: "Pablo Coronel",
   subtitle: "video maker & editor",
   sections: [
-    {category: "about", id: 1 },
-    {category: "works", id:2},
-    {category:"services",id:3},
-    {category:"vita",id:4},
-    {category:"contact",id:5},
+    { category: "about", id: 1 },
+    { category: "services", id: 2 },
+    { category: "works", id: 3 },
+    { category: "contact", id: 4 }
   ],
   aboutPhoto: "/aboutmephoto-nobg.png",
   logoPhoto: "/logo.png",
@@ -15,22 +14,33 @@ export default {
   posterVideoThumbnail: "/poster-video-thumbnail.png",
   aboutmeText:
     "My interest in cinematographic processes has led me, during my 20 years in the audiovisual world, to develop my professional skills in editing, photography and directing. I have directed music videos institutional videos, documentaries, tv series, I have shot live concerts, documentaries, tv shows and I have edited all kinds of audiovisual formats (fiction films, tv shows, tv series, music videos, video art, etc...); but my desire to tell stories focused me to make my own documentary films. As a filmmaker, telling documentary stories is what motivates me the most. I love my job and I take every project as a new challenge. I like my work to be as perfect as possible according to the tools and time available for each of them.",
+  contactInfo:{
+    tel1:"+49 (0) 1792248351",
+    tel2:"+351 915650360",
+    mail:"pabloignaciocoronel@gmail.com",
+    youtube:"youtube.com/pablignacio",
+    photoWeb:"https://500px.com/p/pablocoronel?view=photos",
+    location:"Berlin, Deutschland"
+  },
   awards: [
     {
       opus: "Cumbia que te vas de ronda",
       opusSubtitle: "feature documentary",
       prizes: [
-        { id:1,
+        {
+          id: 1,
           prizeName: "Jury Special Award and Best in Music Award",
           date: "2021",
           place: "Culture Cinema Film Festival, India",
         },
-        {id:2,
+        {
+          id: 2,
           prizeName: "Audience Award",
           date: "2021",
           place: "Latino and Native American Fiilm Festival, USA",
         },
-        {id:3,
+        {
+          id: 3,
           prizeName: "Audience Award",
           date: "2021",
           place: "Rencontres du cinéma sud-américain, France",
@@ -42,6 +52,7 @@ export default {
       opusSubtitle: "feature documentary",
       prizes: [
         {
+          id: 4,
           prizeName: "Honorable mention",
           date: "2015",
           place: "INCAA TV, Argentina",
@@ -53,6 +64,7 @@ export default {
       opusSubtitle: "documentary tv series",
       prizes: [
         {
+          id: 5,
           prizeName: "New Technologies Award",
           date: "2015",
           place: "Festival de Cine Político, Argentina",
@@ -64,6 +76,7 @@ export default {
       opusSubtitle: "documentary tv series",
       prizes: [
         {
+          id: 6,
           prizeName: "Best Children’s Program",
           date: "2012",
           place: "India Catalina Award, Colombia",
@@ -74,7 +87,7 @@ export default {
 
   works: [
     {
-        id:1,
+      id: 1,
       title: "Cumbia que te vas de Ronda",
       subtitle: "2020, feature documentary",
       description:
@@ -85,7 +98,7 @@ export default {
       poster: "/poster-cqtvdr.jpeg",
     },
     {
-        id:2,
+      id: 2,
       title: "Cumbia la Reina",
       subtitle: "2015, feature documentary",
       description:
@@ -98,47 +111,55 @@ export default {
     },
   ],
   otherWorks: [
-    { id:1,
+    {
+      id: 1,
       title: "Prosap",
       subtitle: "Ministry of Agriculture, Argentina",
       description: "",
-      trailerUrl:"https://www.youtube.com/embed/YfID6E3z-Ok?controls=0",
+      trailerUrl: "https://www.youtube.com/embed/YfID6E3z-Ok?controls=0",
       criticText: " ",
       poster: "",
     },
-    { id:2,
+    {
+      id: 2,
       title: "Estampida",
       subtitle: "León Ferrari Foundation",
       description: "",
-      trailerUrl:"https://www.youtube.com/embed/CtX7W5mqZKQ?controls=0",
+      trailerUrl: "https://www.youtube.com/embed/CtX7W5mqZKQ?controls=0",
       criticText: " ",
       poster: "",
     },
-    { id:3,
+    {
+      id: 3,
       title: "Denver Farma SA",
       subtitle: "...",
       description: "",
-      trailerUrl:"https://www.youtube.com/embed/JxVtdUIjDGM?controls=0&amp;start=115" ,
+      trailerUrl:
+        "https://www.youtube.com/embed/JxVtdUIjDGM?controls=0&amp;start=115",
       criticText: "",
       poster: "",
     },
-    {id:4,
+    {
+      id: 4,
       title: "90’s Pop Tour",
       subtitle: "VEVO",
       description: "",
-      trailerUrl:"https://www.youtube.com/embed/K4IEJM3XvXE?controls=0",
+      trailerUrl: "https://www.youtube.com/embed/K4IEJM3XvXE?controls=0",
       criticText: "",
       poster: "",
     },
-    {id: 5,
+    {
+      id: 5,
       title: "Exploración Maya",
       subtitle: "History Channel, México",
       description: "",
-      trailerUrl: "https://www.youtube.com/embed/RD51nFxfW5k?controls=0&amp;start=2k",
+      trailerUrl:
+        "https://www.youtube.com/embed/RD51nFxfW5k?controls=0&amp;start=2k",
       criticText: "",
       poster: "",
     },
-    {id:6,
+    {
+      id: 6,
       title: "Santiagueños",
       subtitle: "Canal Encuentro, Argentina ",
       description: "",
@@ -146,7 +167,8 @@ export default {
       criticText: "",
       poster: "",
     },
-    {id:7,
+    {
+      id: 7,
       title: "Ter Pressa",
       subtitle: "Diogo Picão",
       description: "",
@@ -154,7 +176,8 @@ export default {
       criticText: "",
       poster: "",
     },
-    {id:8,
+    {
+      id: 8,
       title: "Malagueña",
       subtitle: "Mariachi Sol de Lisboa",
       description: "",
@@ -162,7 +185,8 @@ export default {
       criticText: "",
       poster: "",
     },
-    {id:9,
+    {
+      id: 9,
       title: "Filmmaker Reel 2022",
       subtitle: "...",
       description: "",
@@ -171,4 +195,32 @@ export default {
       poster: "",
     },
   ],
+  services: {
+    title: "What can I do for you?",
+    finalText:
+      "I can take charge of the entire audiovisual process. Feel free to ask me about any queries you might have. My objective is to create the best work  possible, always in common agreement   with you.",
+    eachService: [
+      {
+        id: 1,
+        title: "Script creation and structuring",
+        description:
+          "Creative process and shooting schedule development from which your future audiovisual piece will emerge.",
+          image: '/services-svgs/script.svg'
+      },
+      {
+        id: 2,
+        title: "Production and Realization",
+        description:
+          "Production of the shooting days, also the recording of the necessary images for the job. All of this contemplates every detail in the roster, technical needs and if    needed, organizing a work team.",
+          image: '/services-svgs/camera.svg'
+      },
+      {
+        id: 3,
+        title: "Post-production and project finalization:",
+        description:
+          "Captured footage organization, selection and editing. Sound mixing and colour correction.",
+          image: '/services-svgs/edition.svg'
+      },
+    ],
+  },
 };

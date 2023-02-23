@@ -6,7 +6,7 @@ export default function Works(props) {
           <img src={it.poster} width="500px" className="--works-poster" />
         </div>
         <div className="--works-right-part-container">
-          <h2>{it.title.toUpperCase()}</h2>
+          <h2 className="--works-title">{it.title.toUpperCase()}</h2>
           <h5 className="--works-subtitle">{it.subtitle.toUpperCase()}</h5>
           <p className="--works-paragraph">{it.description}</p>
           <button className="--works-btn-watch-trailer">
@@ -21,13 +21,13 @@ export default function Works(props) {
     return (
       <div className="--works-otherworks-flex-container" key={it.id}>
         <iframe
-          width="400"
+          max-width="200"
           height="315"
           src={it.trailerUrl}
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <h4>{it.title}</h4>
         <p className="--works-otherWorks-subtitle">{it.subtitle}</p>
@@ -37,6 +37,8 @@ export default function Works(props) {
 
   return (
     <div id="works">
+    <br/>
+    <h2 className="--works-portfolio-title">WORKS</h2>
       {eachWork}
       <h2 className="--works-portfolio-title">MY PORTFOLIO</h2>
       <div className="--works-otherWork-grid-total-container">{otherWorkMakeGrid}</div>
