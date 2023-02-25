@@ -44,8 +44,8 @@ const [mailSendedMessage, setMailSendedMessage] = useState("")
   
   
   return (
-    <>
-      <h1>CONTACT</h1>
+    <div className="--contact-total-container">
+      <h1 className="--contact-title">CONTACT</h1>
       <div className="--contact-message-after-sending">{mailSendedMessage}</div>
       <form ref={form} onSubmit={handleSubmit}>
         <input
@@ -79,9 +79,9 @@ const [mailSendedMessage, setMailSendedMessage] = useState("")
           required
         />
         <br />
-        <button>Send</button>
+        <button className="--contact-btn-send">Send</button>
         
       </form>
-    </>
+    </div>
   );
 }

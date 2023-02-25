@@ -20,6 +20,7 @@ export default function Works(props) {
   
   
   const eachWork = props.works.map((it) => {
+    
     return (
       <div className="--works-whole-container" key={it.id}>
         <div className="--works-left-part-container">
@@ -31,7 +32,7 @@ export default function Works(props) {
           <p className="--works-paragraph">{it.description}</p>
           <button 
           className="--works-btn-watch-trailer">
-          <a href={it.trailerUrl} target="_blank" rel="noopener noreferrer">
+          <a href={it.trailerUrl} >
            Watch trailer</a>
           </button> 
         
@@ -43,6 +44,9 @@ export default function Works(props) {
 
   const otherWorkMakeGrid = props.otherWorks.map((it) => {
     return (
+     
+        
+      
       <div className="--works-otherworks-flex-container" key={it.id}>
         <iframe
           max-width="200"
