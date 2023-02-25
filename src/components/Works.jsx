@@ -1,4 +1,24 @@
+import { useState } from 'react'
+
 export default function Works(props) {
+ 
+  const [watchMovie, setWatchMovie] = useState(props.works.map( it => {
+    return{
+    id: it.id,
+    isSelected: it.isSelected
+}}))
+ 
+
+ 
+ function handleClickWatchMovie(id){
+    setWatchMovie(prev => {
+    return prev.map(it=> {
+      return it.id===id ? {...it, isSelected: !it.isSelected} : it
+    })
+     })  
+  }
+  
+  
   const eachWork = props.works.map((it) => {
     return (
       <div className="--works-whole-container" key={it.id}>
@@ -9,11 +29,15 @@ export default function Works(props) {
           <h2 className="--works-title">{it.title.toUpperCase()}</h2>
           <h5 className="--works-subtitle">{it.subtitle.toUpperCase()}</h5>
           <p className="--works-paragraph">{it.description}</p>
-          <button className="--works-btn-watch-trailer">
-            <a href="#">Watch trailer</a>
-          </button>
-        </div>
+          <button 
+          className="--works-btn-watch-trailer"
+          onClick={()=>handleClickWatchMovie(it.id)}>
+           Watch trailer
+          </button> 
+        
+        </div> 
       </div>
+      
     );
   });
 
@@ -36,12 +60,16 @@ export default function Works(props) {
   });
 
   return (
+   
     <div id="works">
     <br/>
-    <h2 className="--works-portfolio-title">WORKS</h2>
+    <h2 className="--works-portfolio-title">MY MOVIES</h2>
       {eachWork}
+     
       <h2 className="--works-portfolio-title">MY PORTFOLIO</h2>
       <div className="--works-otherWork-grid-total-container">{otherWorkMakeGrid}</div>
+      
     </div>
+   
   );
 }

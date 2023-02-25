@@ -19,19 +19,19 @@ nav {
 .--nav-title{
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1rem;
   color: rgb(6, 101, 169);
-  filter: drop-shadow(-1px 2px 1px #070000);
+  filter: drop-shadow(-1px 3px 1px #070000);
   letter-spacing: 0rem;
 }
 .--nav-subtitle{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1rem;
- letter-spacing: 0.25rem;
-  margin-top:-15px;
+ letter-spacing: 0.35rem;
+  margin-top:-20px;
   color: azure;
 }
 
@@ -48,7 +48,7 @@ nav {
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
-  font-size:0.8rem;
+  font-size:1rem;
 }
 
 .menu-button-container {

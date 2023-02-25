@@ -88,6 +88,7 @@ export default {
   works: [
     {
       id: 1,
+      isSelected:false,
       title: "Cumbia que te vas de Ronda",
       subtitle: "2020, feature documentary",
       description:
@@ -99,6 +100,7 @@ export default {
     },
     {
       id: 2,
+      isSelected: false,
       title: "Cumbia la Reina",
       subtitle: "2015, feature documentary",
       description:

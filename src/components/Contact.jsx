@@ -1,46 +1,87 @@
-export default function Contact(){
-    function handleSubmit(e){
-        e.preventDefault();   
-    }
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
-    function handleChange(){}
-    return (
-        <>
-        <h1>CONTACT</h1>
-        <form
-        method="post"
-        onSubmit={handleSubmit}
-        >
-        <input 
-        type="text"
-        name=""
-        value=""
-        placeholder="Name" 
-        onChange={handleChange}
-        required />
-        <input 
-        type="email"
-        name=""
-        value=""
-        placeholder="Email" 
-        onChange={handleChange}
-        required />
-        <input 
-        type="text"
-        name=""
-        value=""
-        placeholder="Subject" 
-        onChange={handleChange}
-         />
-         <input 
-        type="textarea"
-        name=""
-        value=""
-        placeholder="Message" 
-        onChange={handleChange}
-        required />
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const form = useRef();
+const [mailSendedMessage, setMailSendedMessage] = useState("")
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_2khlm57', 'template_l5wfka7', form.current, 'Yifd4mj8sBBQEsFV9')
+    .then((result) => {
+        console.log(result.text);
+        setFormData({
+            fullName: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        setMailSendedMessage("Your message has been sended OK")
+    }, (error) => {
+        console.log(error.text);
+        setMailSendedMessage("Sorry, your message hasn´t been sended correctly. Please consider writing directly to pabloignaciocoronel@gmail.com")
+    });
+    };
+  
+
+
+  function handleChange(event) {
+   setFormData(prev => {
+    return {
+        ...prev,
+        [event.target.name]: event.target.value
+    }
+   })
+    
+  }
+  
+  
+  
+  return (
+    <>
+      <h1>CONTACT</h1>
+      <div className="--contact-message-after-sending">{mailSendedMessage}</div>
+      <form ref={form} onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="fullName"
+          placeholder="Full Name"
+          value={formData.fullName}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="text"
+          name="subject"
+          placeholder="Subject"
+          value={formData.subject}
+          onChange={handleChange}
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
+        <br />
         <button>Send</button>
         
-        </form></>
-    )
+      </form>
+    </>
+  );
 }
