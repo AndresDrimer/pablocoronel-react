@@ -10,13 +10,13 @@ export default function Works(props) {
  
 
  
- function handleClickWatchMovie(id){
-    setWatchMovie(prev => {
-    return prev.map(it=> {
-      return it.id===id ? {...it, isSelected: !it.isSelected} : it
-    })
-     })  
-  }
+ //function handleClickWatchMovie(id){
+   // setWatchMovie(prev => {
+    //return prev.map(it=> {
+     // return it.id===id ? {...it, isSelected: !it.isSelected} : it
+    //})
+     //})  
+  //}
   
   
   const eachWork = props.works.map((it) => {
@@ -30,9 +30,9 @@ export default function Works(props) {
           <h5 className="--works-subtitle">{it.subtitle.toUpperCase()}</h5>
           <p className="--works-paragraph">{it.description}</p>
           <button 
-          className="--works-btn-watch-trailer"
-          onClick={()=>handleClickWatchMovie(it.id)}>
-           Watch trailer
+          className="--works-btn-watch-trailer">
+          <a href={it.trailerUrl} target="_blank" rel="noopener noreferrer">
+           Watch trailer</a>
           </button> 
         
         </div> 
