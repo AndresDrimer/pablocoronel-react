@@ -44,7 +44,7 @@ const [mailSendedMessage, setMailSendedMessage] = useState("")
   
   
   return (
-    <div className="--contact-total-container">
+    <div className="--contact-total-container" id="contact">
       <h1 className="--contact-title">CONTACT</h1>
       <div className="--contact-message-after-sending">{mailSendedMessage}</div>
       <form ref={form} onSubmit={handleSubmit}>

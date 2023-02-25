@@ -10,7 +10,7 @@ export default function Services(props) {
     );
   });
   return (
-    <div className="--services-background-img">
+    <div className="--services-background-img" id="services">
       <h1 className="--services-main-title">{props.title.toUpperCase()}</h1>
       {makeEachService}
     </div>

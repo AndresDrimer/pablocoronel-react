@@ -187,7 +187,7 @@ export default {
       criticText: "",
       poster: "",
     },
-    {
+    /*{
       id: 9,
       title: "Filmmaker Reel 2022",
       subtitle: "...",
@@ -195,7 +195,7 @@ export default {
       trailerUrl: "https://player.vimeo.com/video/758497058?h=8ab41ed5ad",
       criticText: "",
       poster: "",
-    },
+    },*/
   ],
   services: {
     title: "What can I do for you?",
