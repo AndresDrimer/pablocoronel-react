@@ -1,5 +1,3 @@
-import "./navComponent.css";
-import { nanoid } from "nanoid";
 
 export default function Nav(props) {
   const makeLis = props.sections.map((it) => {
@@ -7,9 +5,9 @@ export default function Nav(props) {
   });
 
   return (
-    <nav>
+    <nav id="nav">
       <div>
-        <h1 className="--nav-title">{props.name.toUpperCase()}</h1>
+        <h1 className="--nav-title"> <a href="#video">{props.name.toUpperCase()}</a></h1>
         <h3 className="--nav-subtitle">{props.subtitle.toUpperCase()}</h3>
       </div>
       <div>

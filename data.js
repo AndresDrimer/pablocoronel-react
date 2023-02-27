@@ -6,7 +6,8 @@ export default {
     { category: "about", id: 1 },
     { category: "services", id: 2 },
     { category: "works", id: 3 },
-    { category: "contact", id: 4 }
+    { category: "portfolio", id: 4},
+    { category: "contact", id: 5 }
   ],
   aboutPhoto: "/aboutmephoto-nobg.png",
   logoPhoto: "/logo.png",
@@ -93,10 +94,11 @@ export default {
       subtitle: "2020, feature documentary",
       description:
         " CUMBIA QUE TE VAS DE RONDA is a documentary road-movie that follows Pablo Coronel and a group of film-musicians who travel tracing the paths of la Cumbia as a musical phenomenon. With Buenos Aires as its starting point, the documentary covers corners of Latin America, where la Cumbia was born and grew up. Pioneers and references - from Totó la Momposina, to Los Mirlos, Celso Piña, Coco Barcala give their testimony, sharing their knowledge and passion for la Cumbia. Pablo’s dreams is to travel with his team to the East and take la Cumbia there where the culture and the languages spoken are completely different. The group travels to Japan, Vietnam, The Philippines and Cambodia, where la Cumbia is almost unknow, but which will no longer be since Pablo and his team will be willing to share its magic and power with the new public.",
-      trailerUrl: "https://www.youtube.com/watch?v=Bh0G2_2xf4U",
+      trailerUrl: "https://www.youtube.com/embed/Bh0G2_2xf4U",
       criticText:
         " ´I feel free when I listen to Cumbia´,says Katsumi Tanaka,guitarist of Minyo Crusaders, a Big Band from Tokyo that mixes Cumbia with Japanese folk. Cumbia Que Te Vas De Ronda proposes a journey across different continents in search of some answers. What is Cumbia and why does it generate such joy? In this vivid experimental movie recorded between Argentina, Bolivia, Colombia, Portugal, Philippines, Vietnam and who knows where else, we’ll find notes and testimonies about Memory and Identity, Rites and the Sun, Afro Stanzas and Drum Beats. Cumbia sounds wild, and therein lies its virtue: it doesn’t need expert dancers. Here, there and everywhere, bodies fill with energy when the Cumbia rhythms sneaks in, even across oceans and distant lands, the feeling is always the same. (Hernán Panessi)",
       poster: "/poster-cqtvdr.jpeg",
+      recortePoster: "/poster-cqtvdr-recorte.jpg"
     },
     {
       id: 2,
@@ -110,6 +112,7 @@ export default {
       criticText:
         "Knees are free. Nobody lives without the experience of cumbia. Anyone who wants to know what it's all about should go dancing. Cumbia is the princess of the street, a hammock for children, the popular music of Latin America. It makes you have fun, it takes the sadness out of you. So, in 1955, Los Wawancó were already making everyone dance. Cumbia la reina, a documentary that honours Argentinean tropical music, tells the story of this beginning and its development. The authorities? El Cuarteto Imperial, Los del Trópico, Koli Arce and El Quinteto Imperial. The influence of Colombian cumbia, the arrival of accordion music, the importance of the interior of the country, the democracy of the loudspeaker, the session musicians, the baby faces of the 90s and the word of the poor neighbourhood. Cumbia la reina is pure emotion. And it is also the centrifugal testimony of sincere hearts, of people with joy, of the hottest, most popular and bewitching souls. That is why it is logical: if there is cumbia there will -always- be celebration. (Hernán Panessi)",
       poster: "/cumbia-la-reina-poster.png",
+      recortePoster: "/cumbia-la-reina-poster-recorte.png"
     },
   ],
   otherWorks: [
@@ -187,7 +190,7 @@ export default {
       criticText: "",
       poster: "",
     },
-    /*{
+    {
       id: 9,
       title: "Filmmaker Reel 2022",
       subtitle: "...",
@@ -195,7 +198,7 @@ export default {
       trailerUrl: "https://player.vimeo.com/video/758497058?h=8ab41ed5ad",
       criticText: "",
       poster: "",
-    },*/
+    },
   ],
   services: {
     title: "What can I do for you?",

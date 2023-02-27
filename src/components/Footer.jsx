@@ -11,6 +11,9 @@ export default function Footer(props) {
         <h4 className="--footer-title">{props.name.toUpperCase()}</h4>
         <h6 className="--footer-subtitle">{props.subtitle.toUpperCase()}</h6>
       </div>
+
+      <div className="--footer-tile"></div>
+
       <div className="footer-first-level-container">
         <div className="--foter-icon-text-container">
           <img src={phoneIcon} className="--footer-icon-tel" />
@@ -26,11 +29,13 @@ export default function Footer(props) {
           <img src={mailIcon} className="--footer-icon-tel" />
           <p className="--footer-p"> {props.contactInfo.mail}</p>
         </div>
-        <div className="--foter-icon-text-container">
+        
+      </div>
+    
+      <div className="--foter-icon-text-container" id="--footer-location">
           <img src={locationIcon} className="--footer-icon-tel" />
           <p className="--footer-p"> {props.contactInfo.location}</p>
-        </div>
-      </div>
+        </div><br />
 
       <a href={props.contactInfo.youtube}>
         <img src={fbIcon} className="--footer-icon" />

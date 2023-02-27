@@ -10,50 +10,39 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-
-
 function App() {
- 
+  
   return (
-   
-      <div className="App">
-        <Nav
-          name={data.name}
-          subtitle={data.subtitle}
-          sections={data.sections}
-        />
-
-     
-        <VideoBackground />
-        <About
-          aboutPhoto={data.aboutPhoto}
-          logoPhoto={data.logoPhoto}
-          awardsLogo={data.awardsLogo}
-          aboutmeText={data.aboutmeText}
-          awards={data.awards}
-        />
-        <Services
-          title={data.services.title}
-          finalText={data.services.finalText}
-          eachService={data.services.eachService}
-        />
-        <Works 
-        works={data.works} 
-        otherWorks={data.otherWorks} 
-        />
-        <Contact 
-        contactInfo={data.contactInfo} 
-        /> 
-
+    <div className="App">
+      <Nav 
+      name={data.name} 
+      subtitle={data.subtitle} 
+      sections={data.sections} />
+      <VideoBackground />
       
-
-        <Footer
-          name={data.name}
-          subtitle={data.subtitle}
-          contactInfo={data.contactInfo}
-        />
-      </div>
-    
+      <About
+        aboutPhoto={data.aboutPhoto}
+        logoPhoto={data.logoPhoto}
+        awardsLogo={data.awardsLogo}
+        aboutmeText={data.aboutmeText}
+        awards={data.awards}
+      /> 
+   
+      
+      <Services
+        title={data.services.title}
+        finalText={data.services.finalText}
+        eachService={data.services.eachService}
+      />
+      <Works works={data.works} otherWorks={data.otherWorks} />
+     
+      <Contact contactInfo={data.contactInfo} />
+      <Footer
+        name={data.name}
+        subtitle={data.subtitle}
+        contactInfo={data.contactInfo}
+      />
+    </div>
   );
 }
 
