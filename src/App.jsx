@@ -15,10 +15,13 @@ function App() {
   
   return (
     <div className="App">
+      
       <Nav 
       name={data.name} 
       subtitle={data.subtitle} 
-      sections={data.sections} />
+      sections={data.sections} 
+      />
+      
       <VideoBackground />
       
       <About
@@ -35,11 +38,19 @@ function App() {
         finalText={data.services.finalText}
         eachService={data.services.eachService}
       />
-      <Works works={data.works} otherWorks={data.otherWorks} />
+
+      <Works 
+      works={data.works} 
+       />
      
       <Portfolio 
-      otherWorks={data.otherWorks} />
-      <Contact contactInfo={data.contactInfo} />
+      otherWorks={data.otherWorks} 
+      />
+      
+      <Contact 
+      contactInfo={data.contactInfo} 
+      />
+
       <Footer
         name={data.name}
         subtitle={data.subtitle}
