@@ -12,7 +12,7 @@ export default function Footer(props) {
         <h6 className="--footer-subtitle">{props.subtitle.toUpperCase()}</h6>
       </div>
 
-      <div className="--footer-tile"></div>
+  
 
       <div className="footer-first-level-container">
         <div className="--foter-icon-text-container">

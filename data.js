@@ -107,8 +107,7 @@ export default {
       subtitle: "2015, feature documentary",
       description:
         " CUMBIA LA REINA narrates the phenomenon by which la Cumbia became part of the Argentinean        culture, evolving in its different and new musical fusions, in its costumes, in its ideological content.        From the beginnings in the 50's with Mario Castellón (founder of Los Wawancó), to the 2000's with Pablo Lescano (a referent of the Cumbia Villera), the history of the Argentinean Cumbia is narrated from its protagonists. Interspersed with the different landscapes, geographical and cultural, in which Cumbia has been able to leave its mark.",
-      trailerUrl:
-        "https://www.cinemargentino.com/films/914988721-cumbia-la-reina",
+      trailerUrl:"https://www.youtube.com/embed/Bh0G2_2xf4U",
       criticText:
         "Knees are free. Nobody lives without the experience of cumbia. Anyone who wants to know what it's all about should go dancing. Cumbia is the princess of the street, a hammock for children, the popular music of Latin America. It makes you have fun, it takes the sadness out of you. So, in 1955, Los Wawancó were already making everyone dance. Cumbia la reina, a documentary that honours Argentinean tropical music, tells the story of this beginning and its development. The authorities? El Cuarteto Imperial, Los del Trópico, Koli Arce and El Quinteto Imperial. The influence of Colombian cumbia, the arrival of accordion music, the importance of the interior of the country, the democracy of the loudspeaker, the session musicians, the baby faces of the 90s and the word of the poor neighbourhood. Cumbia la reina is pure emotion. And it is also the centrifugal testimony of sincere hearts, of people with joy, of the hottest, most popular and bewitching souls. That is why it is logical: if there is cumbia there will -always- be celebration. (Hernán Panessi)",
       poster: "/cumbia-la-reina-poster.png",

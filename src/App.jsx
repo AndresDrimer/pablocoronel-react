@@ -9,6 +9,7 @@ import Works from "./components/Works";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Portfolio from './components/Portfolio'
 
 function App() {
   
@@ -36,6 +37,8 @@ function App() {
       />
       <Works works={data.works} otherWorks={data.otherWorks} />
      
+      <Portfolio 
+      otherWorks={data.otherWorks} />
       <Contact contactInfo={data.contactInfo} />
       <Footer
         name={data.name}

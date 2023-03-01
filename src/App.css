@@ -12,18 +12,7 @@ a {
   text-decoration: none;
  color: inherit
 }
-.nav-scroller{
-  position: fixed;
-  background:rgba(22,22,22, 0.5);
-  width: 80px;
-  height: 50px;
-  top:90vh;
-  right:0;
-  color: azure;
-  line-height: 1rem;
-  z-index:10;
-  cursor: pointer;
-}
+
 /*NA*/
 nav {
   position: fixed;
@@ -211,13 +200,26 @@ nav {
     font-size:0.3rem
   }
 }
+
+
 /*ABOUT*/
+#about {
+  scroll-margin-top: 140px;
+}
+
+.--about-total-wrapper{
+  padding:0;
+  margin:0;
+}
+
 @media (width>1400px) {
   .--about-total-wrapper {
-    margin: auto;
+    margin:  auto;
     max-width: 70%;
+    
   }
 }
+
 .--about-welcome-text-container {
   margin-top: 5rem;
 }
@@ -230,9 +232,35 @@ nav {
     font-size: 2rem;
   }
 }
+
 .--about-subtitle {
   color: grey;
   font-weight: 600;
+}
+
+.--about-container-for-two-elements {
+  display: flex;
+  height:100%;
+  width:100%;
+  flex-direction: row;
+  align-items: center; 
+}
+@media (width<400px) {
+  .--about-container-for-two-elements {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (width<900px) {
+  .--about-container-for-two-elements {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+   
+  }
+  .--about-photo {
+    width: 300px;
+  }
 }
 .--about-btn-select {
   background-color: white;
@@ -248,39 +276,22 @@ nav {
 .--about-btn-select:active {
   background-color: gray;
 }
+
 .--about-conditional-text-containers {
   max-width: 600px;
   margin: auto;
   text-align: justify;
-  padding: 40px;
+  padding: 40px;  
 }
-.--about-prizes-lis {
-  list-style: none;
-}
-.--about-prizes-opus-title {
-  color: rgb(6, 101, 169);
-  text-align: left;
-}
-.--about-awards-paragraph {
-  line-height: 1.2rem;
-}
-.--about-container-for-two-elements {
+.--about-cont-img {
+  margin:  auto;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-@media (width<400px) {
-  .--about-container-for-two-elements {
-    flex-direction: column;
-    justify-content: center;
-  }
 }
 .--about-photo {
   max-width: 400px;
+  align-self: baseline;
 }
-.--about-cont-img {
-  margin: auto;
-}
+
 @media (width<500px) {
   .--about-photo {
     max-width: 300px;
@@ -291,33 +302,35 @@ nav {
     max-width: 150px;
   }
 }
-@media (width<900px) {
-  .--about-container-for-two-elements {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .--about-photo {
-    width: 300px;
-  }
+/* ABOUT : inside awardsText function*/
+.--about-prizes-lis {
+  list-style: none;
 }
-#about {
-  scroll-margin-top: 140px;
+.--about-prizes-opus-title {
+  color: rgb(6, 101, 169);
+  text-align: left;
 }
+.--about-awards-paragraph {
+  line-height: 1.2rem;
+}
+
+
+
+
+
 /*WORKS*/
 #portfolio{
   scroll-margin-top: 140px;
 }
 .--works-whole-container {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  display:flex;
+  place-content: center;
 }
 
 .--works-movie-info-container,
 .--works-movie-poster-container {
-  margin: auto;
+  
   offset: hidden;
 }
 
@@ -331,20 +344,16 @@ nav {
   
 }
 .--works-poster {
-  width: 100%;
+  width: 200px;
   height: 100%;
   object-fit: cover;
 }
-@media(width<450px){
-  .--works-poster {
-    /*esto es una resolucion mala*/
-    max-width: 250px;
-  }
-}
+
 
 .--works-movie-poster-to-right{
   order:2;
 }
+
 .--works-movie-info-container {
   height: 100%;
   display: flex;
@@ -381,18 +390,6 @@ nav {
   width: 80%;
 }
 
-.--works-btn-watch-trailer {
-  background-color: rgb(6, 101, 169);
-  border-radius: 15px;
-  width: 120px;
-  height: 35px;
-  margin: 40px 0 25px 0;
-  border: none;
-  margin: 0 auto;
-}
-.--works-btn-watch-trailer:active {
-  background-color: grey;
-}
 
 #works {
   margin: auto;
