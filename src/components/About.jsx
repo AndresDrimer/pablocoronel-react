@@ -4,7 +4,18 @@ export default function About(props) {
   const [textShown, setTextShown] = useState(true);
   console.log(textShown)
   function toggleText() {
-    setTextShown(!textShown);
+    setTextShown(prev => !prev);
+
+    const imgBtnLogo = document.querySelector('#btn-img-logo')
+    const imgBtnAwards = document.querySelector('#btn-img-awards')
+
+    if (textShown){ 
+    imgBtnLogo.classList.add("--about.btn-blue") 
+    imgBtnAwards.classList.remove("--about.btn-blue")} else {
+      imgBtnLogo.classList.remove("--about.btn-blue") 
+      imgBtnAwards.classList.add("--about.btn-blue")
+    }
+
     console.log(textShown);
   }
 
@@ -32,23 +43,29 @@ export default function About(props) {
     );
   });
 
+
+  function toggleHandler(){
+    setTextShown(prev => !prev);
+    console.log(textShown)
+  }
+
+
   return (
     <div className="--about-total-wrapper" id="about">
       <div className="--about-welcome-text-container">
         <h3 className="--about-subtitle">HELLO I´M PABLO </h3>
         <h2 className="--about-title">WELCOME</h2>
       </div>
-      <div className="--about-two-buttons-container">
-        <button className="--about-btn-select" onClick={toggleText}>
-          <img
-            src={props.logoPhoto}
-            width="50px"
-            height="50px"
-          />
-        </button>
-
-        
+      
+      
+ 
+      <div className={`--about-toggler${!textShown ? "awards" : ""}`} onClick={toggleHandler}>
+      
+      <img className={`--about-toggler-notch${!textShown ? "awards" : ""}`}
+       src={textShown ? props.logoPhoto : props.awardsLogo}/>
       </div>
+
+
       <div className="--about-container-for-two-elements">
         <div className="--about-conditional-text-containers">
           <h4 className="--about-continional-text-title">

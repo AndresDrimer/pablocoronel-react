@@ -233,6 +233,38 @@ nav {
   font-weight: 600;
 }
 
+
+.--about-toggler,.--about-togglerawards{
+  margin:auto;
+  width:120px;
+  height: 60px;
+  border: 1px solid var(--color-abrigo);
+  border-radius:35px;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--color-celeste);
+}
+
+.--about-togglerawards{
+  background-color: var(--color-abrigo);
+}
+.--about-toggler-notch, .--about-toggler-notchawards{
+  width:50px;
+  height: 50px;
+  background-color:azure;
+  border-radius:50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: all .5s ease;
+}
+
+.--about-toggler-notchawards{
+  transform: translate(60px, 0);
+  background-color: azure;
+  
+}
+
 .--about-container-for-two-elements {
   display: flex;
   height: 100%;
@@ -264,11 +296,16 @@ nav {
   cursor: pointer;
   padding: 10px;
 }
+/*
 .--about-btn-select:hover {
   background-color: rgb(6, 101, 169);
 }
 .--about-btn-select:active {
   background-color: gray;
+}
+*/
+.--about.btn-blue{
+ filter: opacity(0.2)
 }
 
 .--about-conditional-text-containers {
