@@ -7,7 +7,7 @@ export default function Works(props) {
     };
 
     return (
-      //this is a way to order one to left, one to right; it´s quite verbose but couldn´t find a way to make it dryer this time because of all sort of changing classes involved
+      //this is a way to order odd items with image to to left, and evens to right; it´s quite verbose but couldn´t find a better way yet
       <>
         
         {(it.id + 1) % 2 === 0 ? (

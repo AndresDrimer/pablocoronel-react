@@ -1,7 +1,17 @@
+import { useState } from "react";
 
 export default function Nav(props) {
+  const [checked, setChecked] = useState(false)
+  
+  function disappearMenu(){
+    setChecked(prev => !prev)
+  }
+  
   const makeLis = props.sections.map((it) => {
-    return <li key={it.id}><a href={`#${it.category}`}>{it.category.toUpperCase()}</a></li>;
+    return <li 
+    key={it.id}
+    onClick={disappearMenu}
+    ><a href={`#${it.category}`}>{it.category.toUpperCase()}</a></li>;
   });
 
   return (
@@ -10,8 +20,9 @@ export default function Nav(props) {
         <h1 className="--nav-title"> <a href="#video">{props.name.toUpperCase()}</a></h1>
         <h3 className="--nav-subtitle">{props.subtitle.toUpperCase()}</h3>
       </div>
+
       <div>
-      <input id="menu-toggle" type="checkbox" />
+      <input id="menu-toggle" type="checkbox" checked={checked} onChange={disappearMenu}/>
       <label className="menu-button-container" htmlFor="menu-toggle">
         <div className="menu-button"></div>
       </label>

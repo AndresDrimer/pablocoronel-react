@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function About(props) {
   const [textShown, setTextShown] = useState(true);
+  console.log(textShown)
   function toggleText() {
     setTextShown(!textShown);
     console.log(textShown);
@@ -40,11 +41,13 @@ export default function About(props) {
       <div className="--about-two-buttons-container">
         <button className="--about-btn-select" onClick={toggleText}>
           <img
-            src={textShown ? props.logoPhoto : props.awardsLogo}
+            src={props.logoPhoto}
             width="50px"
             height="50px"
           />
         </button>
+
+        
       </div>
       <div className="--about-container-for-two-elements">
         <div className="--about-conditional-text-containers">

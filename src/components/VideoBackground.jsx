@@ -8,7 +8,7 @@ export default function VideoBackground(){
     return(
         <>
         <div className='myvideo' id="video">
-        <video src={videoUrl} autoPlay loop muted poster={posterVideoThumbnail}/></div>
+        <video src={videoUrl} autoPlay loop poster={posterVideoThumbnail}/></div>
         </>
     )
 }

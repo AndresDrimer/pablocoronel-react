@@ -14,6 +14,7 @@ export default function Portfolio(props){
         ></iframe>
         <h4>{it.title}</h4>
         <p className="--works-otherWorks-subtitle">{it.subtitle}</p>
+        <p className="--works-otherWorks-description"><em> ({it.description})</em></p>
       </div>
     );
   });
