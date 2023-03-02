@@ -242,11 +242,11 @@ nav {
   border-radius:35px;
   position: relative;
   cursor: pointer;
-  background-color: var(--color-celeste);
+  background-color: var(--color-abrigo);
 }
 
 .--about-togglerawards{
-  background-color: var(--color-abrigo);
+  background-color: var(--color-celeste);
 }
 .--about-toggler-notch, .--about-toggler-notchawards{
   width:50px;
