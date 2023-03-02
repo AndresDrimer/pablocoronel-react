@@ -12,10 +12,13 @@ export default function Services(props) {
     );
   });
   return (
-    <div className="--services-background-img" id="services">
+    <div className="--services-background-img" id="services"> <div className="--services-all-text-container">
       <h1 className="--services-main-title">{props.title.toUpperCase()}</h1>
-      {makeEachService}
+     
+        {makeEachService}
       <p className="--services-final-text">{props.finalText}</p>
+      </div>
+      
      </div>
   );
 }

@@ -310,7 +310,7 @@ nav {
 
 /*WORKS*/
 #works {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 120px;
 }
 .--works-title {
   font-size: 2rem;
@@ -402,7 +402,7 @@ nav {
 }
 /*PORTFOLIO*/
 #portfolio {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 220px;
 }
 .--works-otherWork-grid-total-container {
   display: grid;
@@ -424,8 +424,10 @@ nav {
 
 /*SERVICES*/
 #services {
-  scroll-margin-top: 59px;
+  scroll-margin-top: 118px;
 }
+
+
 .--services-background-img {
   /*background-image: url("/bckground-lens-img.jpg");*/
   background-image: url("/services-back.jpeg");
@@ -438,8 +440,18 @@ nav {
   background-color: var(--color-celeste);
   background-blend-mode: multiply;
   padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.--services-all-text-container{
+  max-width:40%;
+}
+@media(width<900px){
+  .--services-all-text-container{
+    max-width:70%;
+  }
+}
 .--services-logoImgs {
   background-color: rgba(6, 101, 169, 0.5);
   width: 50px;
@@ -457,20 +469,24 @@ nav {
   margin: 10px auto;
   display: flex;
   flex-direction: row;
-  max-width: 600px;
+  width: 100%;
   padding-right: 40px;
 }
 .--services-each-description {
   color: azure;
   text-align: justify;
   word-wrap: normal;
+  align-self: center;
 }
 .--services-final-text {
   color: azure;
-  margin: 2rem 20%;
+  margin: 2rem 0;
   text-align: justify;
 }
 /*CONTACT*/
+#contact{
+  scroll-margin-top: 120px;
+}
 .--contact-total-container {
   background-image: url("/vintage-lens.jpg");
   background-size: cover;
