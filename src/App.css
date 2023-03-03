@@ -455,8 +455,9 @@ nav {
   margin-top: -1.5rem;
 }
 .--works-otherWorks-description {
-  margin-top: -0.5rem;
+  margin-top: -1.2rem;
   font-size: 1rem;
+  color: var(--color-abrigo);
 }
 
 /*SERVICES*/
