@@ -10,6 +10,7 @@
 
   --color-abrigo: rgb(180, 185, 200);
   --font-size-title-section: 2rem;
+  --margin-top-excedent: 60px;
 }
 a {
   text-decoration: none;
@@ -204,6 +205,7 @@ nav {
   scroll-margin-top: 140px;
 }
 
+
 .--about-total-wrapper {
   padding: 0;
   margin: 0;
@@ -342,7 +344,7 @@ nav {
 
 /*SERVICES*/
 #services {
-  scroll-margin-top: 118px;
+  scroll-margin-top: 60px;
 }
 
 
@@ -404,7 +406,7 @@ nav {
 
 /*WORKS*/
 #works {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 60px;
 }
 .--works-title {
   font-size: var(--font-size-title-section);
@@ -496,7 +498,7 @@ nav {
 }
 /*PORTFOLIO*/
 #portfolio {
-  scroll-margin-top: 220px;
+  scroll-margin-top: 140px;
 }
 .--works-otherWork-grid-total-container {
   display: grid;
@@ -520,7 +522,7 @@ nav {
 
 /*CONTACT*/
 #contact{
-  scroll-margin-top: 119px;
+  scroll-margin-top: 0px;
 }
 .--contact-total-container {
   background-image: url("/vintage-lens.jpg");
@@ -650,3 +652,5 @@ footer {
   background-color: #222222;
   padding-top: 150px;
 }
+
+
