@@ -9,6 +9,7 @@
   --color-celeste: rgb(6, 101, 169);
 
   --color-abrigo: rgb(180, 185, 200);
+  --font-size-title-section: 2rem;
 }
 a {
   text-decoration: none;
@@ -269,9 +270,9 @@ nav {
   display: flex;
   height: 100%;
   width: 100%;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: row; 
 }
+
 @media (width<400px) {
   .--about-container-for-two-elements {
     flex-direction: column;
@@ -288,31 +289,14 @@ nav {
     width: 300px;
   }
 }
-.--about-btn-select {
-  background-color: white;
-  border-radius: 50%;
-  margin: 0 10px;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-}
-/*
-.--about-btn-select:hover {
-  background-color: rgb(6, 101, 169);
-}
-.--about-btn-select:active {
-  background-color: gray;
-}
-*/
-.--about.btn-blue{
- filter: opacity(0.2)
-}
+
 
 .--about-conditional-text-containers {
   max-width: 600px;
-  margin: auto;
+  margin: 0 auto;
   text-align: justify;
-  padding: 40px;
+  padding: 0 40px;
+  margin-bottom:-30px /*esto es medio raro*/
 }
 .--about-cont-img {
   margin: auto;
@@ -335,20 +319,24 @@ nav {
 }
 /* ABOUT : inside awardsText function*/
 .--about-each-full-prize{
-  margin-top:-1rem;
+  margin-top:-1.2rem;
 }
 .--about-prizes-lis {
   list-style: none;
+ line-height:1rem;
  
  
 }
 .--about-prizes-opus-title {
   color: rgb(6, 101, 169);
   text-align: left;
+  
  
 }
 .--about-awards-paragraph {
   line-height: 1.3rem;
+  margin-top:0.8rem;
+  
 }
 
 
@@ -390,7 +378,7 @@ nav {
 }
 .--services-main-title {
   color: azure;
-  font-size: 2rem;
+  font-size: var(--font-size-title-section);
   padding: 0px 20px 60px 0;
   line-height: 2rem;
   margin: 0 20px;
@@ -419,7 +407,7 @@ nav {
   scroll-margin-top: 120px;
 }
 .--works-title {
-  font-size: 2rem;
+  font-size: var(--font-size-title-section);
 }
 
 .--works-whole-container {
@@ -517,7 +505,7 @@ nav {
 }
 
 .--works-portfolio-title {
-  font-size: 2rem;
+  font-size: var(--font-size-title-section);
   line-height: 2rem;
   margin-top:4rem;
 }
@@ -532,7 +520,7 @@ nav {
 
 /*CONTACT*/
 #contact{
-  scroll-margin-top: 120px;
+  scroll-margin-top: 119px;
 }
 .--contact-total-container {
   background-image: url("/vintage-lens.jpg");
@@ -549,6 +537,7 @@ nav {
 .--contact-title {
   color: azure;
   padding-top: 25px;
+  font-size: var(--font-size-title-section);
 }
 form {
   display: flex;

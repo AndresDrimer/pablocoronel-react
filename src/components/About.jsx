@@ -68,10 +68,10 @@ export default function About(props) {
 
       <div className="--about-container-for-two-elements">
         <div className="--about-conditional-text-containers">
-          <h4 className="--about-continional-text-title">
+          <h4 className="--about-condinional-text-title">
             {textShown ? "About me" : "Awards"}
           </h4>
-          <p className="--about-continional-text-content">
+          <p className="--about-condinional-text-content">
             {textShown && props.aboutmeText}
           </p>
           {!textShown && awardsText}
