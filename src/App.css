@@ -18,6 +18,22 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/*VIDEO*/
+
+.myvideo {
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  padding: 0;
+  margin: 0;
+}
 
 /*NAV*/
 nav {
