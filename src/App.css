@@ -45,7 +45,6 @@ nav {
   line-height: 1rem;
 
   color: var(--color-abrigo);
-  /*filter: drop-shadow(-1px 3px 1px #070000);*/
   letter-spacing: 0rem;
 }
 .--nav-subtitle {
@@ -72,7 +71,6 @@ nav {
   margin: 0 1rem;
   overflow: hidden;
   font-size: 1rem;
-  /*filter: drop-shadow(3px, 3px, 3px, #070000);*/
 }
 
 .menu-button-container {
@@ -205,9 +203,12 @@ nav {
 /*ABOUT*/
 #about {
   scroll-margin-top: 140px;
-  
 }
-
+@media(width<500px){
+  #about {
+  scroll-margin-top: calc(140px + var(--margin-top-excedent))
+  }
+}
 
 .--about-total-wrapper {
   padding: 0;
@@ -227,7 +228,7 @@ nav {
 .--about-title {
   font-size: 3rem;
   margin-top: -0.3rem;
-  letter-spacing: var(--letter-spacing-titles);
+  letter-spacing: 0.2rem;
 }
 @media (width<300px) {
   .--about-title {
@@ -350,7 +351,11 @@ nav {
 #services {
   scroll-margin-top: 58px;
 }
-
+@media(width<500px){
+  #services{
+  scroll-margin-top: 92px;
+  }
+}
 
 .--services-background-img {
   /*background-image: url("/bckground-lens-img.jpg");*/
@@ -421,6 +426,11 @@ nav {
 /*WORKS*/
 #works {
   scroll-margin-top: 30px;
+}
+@media(width<500px){
+  #works{
+  scroll-margin-top: calc(30px + var(--margin-top-excedent))
+  }
 }
 .--works-title {
   font-size: var(--font-size-title-section);
@@ -515,6 +525,11 @@ nav {
 #portfolio {
   scroll-margin-top: 140px;
 }
+@media(width<500px){
+  #portfolio{
+  scroll-margin-top: calc(140px + var(--margin-top-excedent))
+  }
+}
 .--works-otherWork-grid-total-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -545,6 +560,11 @@ nav {
 /*CONTACT*/
 #contact{
   scroll-margin-top: 0px;
+}
+@media(width<500px){
+  #contact{
+  scroll-margin-top:92px
+  }
 }
 .--contact-total-container {
   background-image: url("/vintage-lens.jpg");
