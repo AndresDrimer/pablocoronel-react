@@ -4,8 +4,8 @@ export default function Services(props) {
   const makeEachService = props.eachService.map((it) => {
     return (
       <div className="--services-cathegory-container" key={it.id}>
-       
-        <p className="--services-each-description">⚡{it.description}</p>
+        <div className='--services-cathegory-plus'>🗸</div>
+        <p className="--services-each-description">{it.description}</p>
       </div>
     );
   });

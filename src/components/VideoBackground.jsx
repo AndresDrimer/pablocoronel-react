@@ -1,5 +1,5 @@
-import videoUrl from '../assets/videobackground-baja.mp4'
-import posterVideoThumbnail from '/poster-video-thumbnail.png'
+import videoUrl from '../assets/videoback5.mp4'
+import posterVideoThumbnail from '/posterVideoBack5.png'
 import './video.css'
 
 

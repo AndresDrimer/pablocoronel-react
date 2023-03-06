@@ -11,6 +11,8 @@
   --color-abrigo: rgb(180, 185, 200);
   --font-size-title-section: 2rem;
   --margin-top-excedent: 60px;
+  --letter-spacing-titles: 0.8rem;
+  scroll-behavior:smooth;
 }
 a {
   text-decoration: none;
@@ -203,6 +205,7 @@ nav {
 /*ABOUT*/
 #about {
   scroll-margin-top: 140px;
+  
 }
 
 
@@ -224,6 +227,7 @@ nav {
 .--about-title {
   font-size: 3rem;
   margin-top: -0.3rem;
+  letter-spacing: var(--letter-spacing-titles);
 }
 @media (width<300px) {
   .--about-title {
@@ -344,7 +348,7 @@ nav {
 
 /*SERVICES*/
 #services {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 58px;
 }
 
 
@@ -384,32 +388,43 @@ nav {
   padding: 0px 20px 60px 0;
   line-height: 2rem;
   margin: 0 20px;
+  letter-spacing: 0.4rem;
 }
 .--services-cathegory-container {
   margin: 10px auto;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
   padding-right: 40px;
 }
+.--services-cathegory-plus {
+  margin-right:20px;
+  color:azure;
+  scale: calc(1.7)
+  
+}
 .--services-each-description {
   color: azure;
-  text-align: justify;
+  text-align: left;
   word-wrap: normal;
   align-self: center;
+  font-weight:600;
 }
 .--services-final-text {
   color: azure;
   margin: 4rem 0 0 0 ;
   text-align: justify;
+  font-weight:600;
 }
 
 /*WORKS*/
 #works {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 30px;
 }
 .--works-title {
   font-size: var(--font-size-title-section);
+  letter-spacing: 1rem;
 }
 
 .--works-whole-container {
@@ -505,11 +520,18 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-
+@media(width>1250px){
+  .--works-otherWork-grid-total-container {
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+}
 .--works-portfolio-title {
   font-size: var(--font-size-title-section);
   line-height: 2rem;
   margin-top:4rem;
+  letter-spacing: var(--letter-spacing-titles);
 }
 .--works-otherWorks-subtitle {
   margin-top: -1.5rem;
@@ -540,6 +562,7 @@ nav {
   color: azure;
   padding-top: 25px;
   font-size: var(--font-size-title-section);
+  letter-spacing: var(--letter-spacing-titles);
 }
 form {
   display: flex;
