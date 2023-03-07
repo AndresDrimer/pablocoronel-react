@@ -26,6 +26,8 @@ export default function Works(props) {
                   allowFullScreen
                 ></iframe>
               </div>
+              <p className="--works-paragraph fade"><em>{it.criticText}</em></p>
+              <br />
             </div>
 
             <div
@@ -53,6 +55,8 @@ export default function Works(props) {
                   allowFullScreen
                 ></iframe>
               </div>
+              <p className="--works-paragraph fade"><em>{it.criticText}</em></p>
+              <br />
             </div>
           </div>
         )}

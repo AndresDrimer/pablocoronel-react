@@ -381,7 +381,7 @@ nav {
 
 /*SERVICES*/
 #services {
-  scroll-margin-top: 58px;
+  scroll-margin-top: 59px;
 }
 @media(width<500px){
   #services{
@@ -524,7 +524,10 @@ nav {
   text-align: justify;
   width: 80%;
 }
+.fade{
+color: var(--color-abrigo);
 
+}
 .--works-trailer-container {
   margin: 20px auto;
   display: flex;
