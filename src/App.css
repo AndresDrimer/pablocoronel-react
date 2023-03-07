@@ -235,7 +235,7 @@ nav {
 @media (width>1400px) {
   .--about-total-wrapper {
     margin: auto;
-    max-width: 70%;
+    max-width: 75%;
   }
 }
 
@@ -291,7 +291,9 @@ nav {
   background-color: azure;
   
 }
-
+.--about-conditional-text-title{
+  padding: 2px 0;
+}
 .--about-container-for-two-elements {
   display: flex;
   height: 100%;
@@ -322,6 +324,7 @@ nav {
   max-width: 600px;
   margin: 0 auto;
   text-align: justify;
+ 
 }
 @media(width>1100px){
   .--about-conditional-text-containers{
