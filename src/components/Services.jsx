@@ -1,10 +1,10 @@
 import addImg from '/add-round.svg'
-
+import doneImg from '/done.svg'
 export default function Services(props) {
   const makeEachService = props.eachService.map((it) => {
     return (
       <div className="--services-cathegory-container" key={it.id}>
-        <div className='--services-cathegory-plus'>🗸</div>
+        <img className='--services-cathegory-plus' src={doneImg}/>
         <p className="--services-each-description">{it.description}</p>
       </div>
     );

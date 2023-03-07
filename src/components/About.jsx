@@ -68,13 +68,13 @@ export default function About(props) {
 
       <div className="--about-container-for-two-elements">
         <div className="--about-conditional-text-containers">
-          <h4 className="--about-condinional-text-title">
+          <h4 className="--about-conditional-text-title">
             {textShown ? "About me" : "Awards"}
           </h4>
-          <p className="--about-condinional-text-content">
+          <p className="--about-conditional-text-content">
             {textShown && props.aboutmeText}
-          </p>
-          {!textShown && awardsText}
+         
+          {!textShown && awardsText} </p>
         </div>
         <div className="--about-cont-img">
           <img src={props.aboutPhoto} className="--about-photo" />

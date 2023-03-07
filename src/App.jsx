@@ -32,21 +32,21 @@ function App() {
         awards={data.awards}
       /> 
    
-      
+     
       <Services
         title={data.services.title}
         finalText={data.services.finalText}
         eachService={data.services.eachService}
       />
-
-      <Works 
-      works={data.works} 
-       />
-     
       <Portfolio 
       otherWorks={data.otherWorks} 
       />
       
+      <Works 
+      works={data.works} 
+       />
+     
+     
       <Contact 
       contactInfo={data.contactInfo} 
       />
