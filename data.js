@@ -122,7 +122,7 @@ export default {
       description: "Institutional video",
       trailerUrl: "https://www.youtube.com/embed/YfID6E3z-Ok?controls=0",
       criticText: " ",
-      poster: "",
+      poster: "/posters-portfolio-pablo/ministerio-agri.png",
     },
     {
       id: 2,
@@ -131,7 +131,7 @@ export default {
       description: "Institutional art video",
       trailerUrl: "https://www.youtube.com/embed/CtX7W5mqZKQ?controls=0",
       criticText: " ",
-      poster: "",
+      poster: "/posters-portfolio-pablo/leon-ferrari.jpg",
     },
     {
       id: 3,
@@ -141,7 +141,7 @@ export default {
       trailerUrl:
         "https://www.youtube.com/embed/JxVtdUIjDGM?controls=0&amp;start=115",
       criticText: "",
-      poster: "",
+      poster: "/posters-portfolio-pablo/denver.jpg",
     },
     {
       id: 4,
@@ -150,7 +150,7 @@ export default {
       description: "Live concert",
       trailerUrl: "https://www.youtube.com/embed/K4IEJM3XvXE?controls=0",
       criticText: "",
-      poster: "",
+      poster: "/posters-portfolio-pablo/90-pops-tour.jpg",
     },
     {
       id: 5,
@@ -160,7 +160,7 @@ export default {
       trailerUrl:
         "https://www.youtube.com/embed/RD51nFxfW5k?controls=0&amp;start=2k",
       criticText: "",
-      poster: "",
+      poster: "/posters-portfolio-pablo/exploracion-maya.png",
     },
     {
       id: 6,
@@ -169,7 +169,7 @@ export default {
       description: "Documentary tv series",
       trailerUrl: "https://www.youtube.com/embed/5m0UUrE4lf8?controls=0&amp",
       criticText: "",
-      poster: "",
+      poster: "/posters-portfolio-pablo/santiaguenios.jpg",
     },
     {
       id: 7,
@@ -178,7 +178,7 @@ export default {
       description: "Video clip",
       trailerUrl: "https://www.youtube.com/embed/aX9kNXr20-E?controls=0&amp",
       criticText: "",
-      poster: "",
+      poster: "/posters-portfolio-pablo/ter-pressa.jpg",
     },
     {
       id: 8,
@@ -187,7 +187,7 @@ export default {
       description: "Video clip",
       trailerUrl: "https://www.youtube.com/embed/_TXC8Ho8tH8?controls=0",
       criticText: "",
-      poster: "",
+      poster: "/posters-portfolio-pablo/mariachi.jpg",
     },
     {
       id: 9,
@@ -196,7 +196,7 @@ export default {
       description: "",
       trailerUrl: "https://player.vimeo.com/video/758497058?h=8ab41ed5ad",
       criticText: "",
-      poster: "",
+      poster: "/posters-portfolio-pablo/reel.jpg",
     },
   ],
   services: {
