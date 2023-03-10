@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Nav from "./components/Nav";
 import data from "../data.js";
-
+import { BrowserRouter } from 'react-router-dom'
 import "./App.css";
 import VideoBackground from "./components/VideoBackground";
 import About from "./components/About";
@@ -14,6 +14,7 @@ import Portfolio from './components/Portfolio'
 function App() {
   
   return (
+    <BrowserRouter>
     <div className="App">
       
       <Nav 
@@ -39,7 +40,7 @@ function App() {
         eachService={data.services.eachService}
       />
       <Portfolio 
-      otherWorks={data.otherWorks} 
+      portfolio={data.portfolio} 
       />
       
       <Works 
@@ -57,6 +58,7 @@ function App() {
         contactInfo={data.contactInfo}
       />
     </div>
+    </BrowserRouter>
   );
 }
 

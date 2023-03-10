@@ -114,9 +114,9 @@ export default {
       recortePoster: "/cumbia-la-reina-poster-recorte.png",
     },
   ],
-  otherWorks: [
+  portfolio: [
     {
-      id: 1,
+      id: 0,
       title: "Prosap",
       subtitle: "Ministry of Agriculture, Argentina",
       description: "Institutional video",
@@ -125,16 +125,16 @@ export default {
       poster: "/posters-portfolio-pablo/ministerio-agri.png",
     },
     {
-      id: 2,
+      id: 1,
       title: "Estampida",
       subtitle: "León Ferrari Foundation",
       description: "Institutional art video",
       trailerUrl: "https://www.youtube.com/embed/CtX7W5mqZKQ?controls=0",
-      criticText: " ",
+      criticText: "",
       poster: "/posters-portfolio-pablo/leon-ferrari.jpg",
     },
     {
-      id: 3,
+      id: 2,
       title: "Denver Farma SA",
       subtitle: "Argentine laboratory",
       description: "Institutional video",
@@ -144,7 +144,7 @@ export default {
       poster: "/posters-portfolio-pablo/denver.jpg",
     },
     {
-      id: 4,
+      id: 3,
       title: "90’s Pop Tour",
       subtitle: "VEVO",
       description: "Live concert",
@@ -153,7 +153,7 @@ export default {
       poster: "/posters-portfolio-pablo/90-pops-tour.jpg",
     },
     {
-      id: 5,
+      id: 4,
       title: "Exploración Maya",
       subtitle: "History Channel, México",
       description: "Documentary tv series",
@@ -163,7 +163,7 @@ export default {
       poster: "/posters-portfolio-pablo/exploracion-maya.png",
     },
     {
-      id: 6,
+      id: 5,
       title: "Santiagueños",
       subtitle: "Canal Encuentro, Argentina ",
       description: "Documentary tv series",
@@ -172,7 +172,7 @@ export default {
       poster: "/posters-portfolio-pablo/santiaguenios.jpg",
     },
     {
-      id: 7,
+      id: 6,
       title: "Ter Pressa",
       subtitle: "Diogo Picão",
       description: "Video clip",
@@ -181,7 +181,7 @@ export default {
       poster: "/posters-portfolio-pablo/ter-pressa.jpg",
     },
     {
-      id: 8,
+      id: 7,
       title: "Malagueña",
       subtitle: "Mariachi Sol de Lisboa",
       description: "Video clip",
@@ -190,7 +190,7 @@ export default {
       poster: "/posters-portfolio-pablo/mariachi.jpg",
     },
     {
-      id: 9,
+      id: 8,
       title: "Filmmaker Reel 2022",
       subtitle: "...",
       description: "",
