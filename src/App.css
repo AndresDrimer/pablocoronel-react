@@ -596,7 +596,9 @@ nav {
 }
 
 /*PORTFOLIO EACH TRAILER*/
-
+.--portfolio-each-trailer-container{
+  height:100vh;
+}
 .--portfolio-go-back-btn{
   margin:20px;
   margin-left: 80%;
@@ -616,6 +618,10 @@ nav {
 .--portfolio-each-trailer-video{
   width:60vw;
   height:500px;
+  margin-top:4rem;
+}
+.--portfolio-eachvideo-text-container{
+  margin-top:4rem;
 }
 /*CONTACT*/
 #contact {
