@@ -387,13 +387,27 @@ nav {
   z-index: 0;
   background-color: var(--color-celeste);
   background-blend-mode: multiply;
-  padding: 40px 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.--services-text-and-footer-container{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between
+}
 .--services-all-text-container {
   max-width: 40%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding:80px 0;
 }
 @media (width<900px) {
   .--services-all-text-container {
@@ -409,7 +423,7 @@ nav {
 .--services-main-title {
   color: azure;
   font-size: var(--font-size-title-section);
-  padding: 0px 20px 60px 0;
+  padding: 0px 20px 40px 0;
   line-height: 2rem;
   margin: 0 20px;
   letter-spacing: 0.4rem;
@@ -438,6 +452,91 @@ nav {
   margin: 4rem 0 0 0;
   text-align: justify;
   font-weight: 600;
+}
+
+/*PORTFOLIO*/
+#portfolio {
+  scroll-margin-top: 90px;
+}
+@media (width<500px) {
+  #portfolio {
+    scroll-margin-top: calc(140px + var(--margin-top-excedent));
+  }
+}
+.--portfolio-grid-total-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+@media (width>1250px) {
+  .--portfolio-grid-total-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.--portfolio-title {
+  font-size: var(--font-size-title-section);
+  line-height: 2rem;
+  margin-top: 2rem;
+  letter-spacing: var(--letter-spacing-titles);
+}
+.--portfolio-eachposter-text-container{
+  margin-top: -1rem;;
+}
+.--portfolio-subtitle {
+  margin-top: -1.5rem;
+}
+.--portfolio-description {
+  margin-top: -1.2rem;
+  font-size: 1rem;
+  color: var(--color-abrigo);
+}
+.--portfolio-posters {
+  max-width: 19rem;
+  height: 19rem;
+}
+.--portfolio-watch-trailer-btn{
+  border-radius: 20px;
+  margin: -2rem 0 2rem 0;
+  height:2rem;
+  background-color: var(--color-celeste);
+  border: none;
+  color: azure;
+  padding: 0 10px;
+}
+.--portfolio-watch-trailer-btn:hover{
+  border: 2px solid #070000;
+}
+.--portfolio-watch-trailer-btn:active{
+  background-color: gray;
+}
+
+/*portfolio each trailer*/
+.--portfolio-each-trailer-container{
+  height:100vh;
+}
+.--portfolio-go-back-btn{
+  margin:20px;
+  margin-left: 80%;
+  color: azure;
+  background-color: #070000;
+  border-radius: 5px;
+  width:30px;
+  height:30px;
+  border:none;
+}
+.--portfolio-go-back-btn:hover{
+  border: 2px solid var(--color-celeste);
+}
+.--portfolio-go-back-btn:active{
+  background-color: gray;
+}
+.--portfolio-each-trailer-video{
+  width:60vw;
+  height:500px;
+  margin-top:4rem;
+}
+.--portfolio-eachvideo-text-container{
+  margin-top:4rem;
 }
 
 /*WORKS*/
@@ -539,90 +638,7 @@ nav {
     height: 600px;
   }
 }
-/*PORTFOLIO*/
-#portfolio {
-  scroll-margin-top: 90px;
-}
-@media (width<500px) {
-  #portfolio {
-    scroll-margin-top: calc(140px + var(--margin-top-excedent));
-  }
-}
-.--portfolio-grid-total-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-@media (width>1250px) {
-  .--portfolio-grid-total-container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-.--portfolio-title {
-  font-size: var(--font-size-title-section);
-  line-height: 2rem;
-  margin-top: 2rem;
-  letter-spacing: var(--letter-spacing-titles);
-}
-.--portfolio-eachposter-text-container{
-  margin-top: -1rem;;
-}
-.--portfolio-subtitle {
-  margin-top: -1.5rem;
-}
-.--portfolio-description {
-  margin-top: -1.2rem;
-  font-size: 1rem;
-  color: var(--color-abrigo);
-}
-.--portfolio-posters {
-  max-width: 19rem;
-  height: 19rem;
-}
-.--portfolio-watch-trailer-btn{
-  border-radius: 20px;
-  margin: -2rem 0 2rem 0;
-  height:2rem;
-  background-color: var(--color-celeste);
-  border: none;
-  color: azure;
-  padding: 0 10px;
-}
-.--portfolio-watch-trailer-btn:hover{
-  border: 2px solid #070000;
-}
-.--portfolio-watch-trailer-btn:active{
-  background-color: gray;
-}
 
-/*PORTFOLIO EACH TRAILER*/
-.--portfolio-each-trailer-container{
-  height:100vh;
-}
-.--portfolio-go-back-btn{
-  margin:20px;
-  margin-left: 80%;
-  color: azure;
-  background-color: #070000;
-  border-radius: 5px;
-  width:30px;
-  height:30px;
-  border:none;
-}
-.--portfolio-go-back-btn:hover{
-  border: 2px solid var(--color-celeste);
-}
-.--portfolio-go-back-btn:active{
-  background-color: gray;
-}
-.--portfolio-each-trailer-video{
-  width:60vw;
-  height:500px;
-  margin-top:4rem;
-}
-.--portfolio-eachvideo-text-container{
-  margin-top:4rem;
-}
 /*CONTACT*/
 #contact {
   scroll-margin-top: 0px;

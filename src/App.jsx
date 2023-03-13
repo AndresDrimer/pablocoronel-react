@@ -39,6 +39,7 @@ function App() {
         finalText={data.services.finalText}
         eachService={data.services.eachService}
       />
+      
       <Portfolio 
       portfolio={data.portfolio} 
       />
