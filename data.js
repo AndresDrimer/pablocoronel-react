@@ -122,7 +122,7 @@ export default {
       description: "Institutional video",
       trailerUrl: "https://www.youtube.com/embed/YfID6E3z-Ok?controls=0",
       criticText: " ",
-      poster: "/posters-portfolio-pablo/ministerio-agri.png",
+      poster: "/posters-portfolio/prosap.png",
     },
     {
       id: 1,
@@ -131,7 +131,7 @@ export default {
       description: "Institutional art video",
       trailerUrl: "https://www.youtube.com/embed/CtX7W5mqZKQ?controls=0",
       criticText: "",
-      poster: "/posters-portfolio-pablo/leon-ferrari.jpg",
+      poster: "/posters-portfolio/estampida.png",
     },
     {
       id: 2,
@@ -141,7 +141,7 @@ export default {
       trailerUrl:
         "https://www.youtube.com/embed/JxVtdUIjDGM?controls=0&amp;start=115",
       criticText: "",
-      poster: "/posters-portfolio-pablo/denver.jpg",
+      poster: "/posters-portfolio/denverfarma.png",
     },
     {
       id: 3,
@@ -150,7 +150,7 @@ export default {
       description: "Live concert",
       trailerUrl: "https://www.youtube.com/embed/K4IEJM3XvXE?controls=0",
       criticText: "",
-      poster: "/posters-portfolio-pablo/90-pops-tour.jpg",
+      poster: "/posters-portfolio/90pop.png",
     },
     {
       id: 4,
@@ -160,7 +160,7 @@ export default {
       trailerUrl:
         "https://www.youtube.com/embed/RD51nFxfW5k?controls=0&amp;start=2k",
       criticText: "",
-      poster: "/posters-portfolio-pablo/exploracion-maya.png",
+      poster: "/posters-portfolio/maya.png",
     },
     {
       id: 5,
@@ -169,7 +169,7 @@ export default {
       description: "Documentary tv series",
       trailerUrl: "https://www.youtube.com/embed/5m0UUrE4lf8?controls=0&amp",
       criticText: "",
-      poster: "/posters-portfolio-pablo/santiaguenios.jpg",
+      poster: "/posters-portfolio/santiaguenios.png",
     },
     {
       id: 6,
@@ -178,7 +178,7 @@ export default {
       description: "Video clip",
       trailerUrl: "https://www.youtube.com/embed/aX9kNXr20-E?controls=0&amp",
       criticText: "",
-      poster: "/posters-portfolio-pablo/ter-pressa.jpg",
+      poster: "/posters-portfolio/terpressa.png",
     },
     {
       id: 7,
@@ -187,16 +187,16 @@ export default {
       description: "Video clip",
       trailerUrl: "https://www.youtube.com/embed/_TXC8Ho8tH8?controls=0",
       criticText: "",
-      poster: "/posters-portfolio-pablo/mariachi.jpg",
+      poster: "/posters-portfolio/mariachis.png",
     },
     {
       id: 8,
-      title: "Filmmaker Reel 2022",
-      subtitle: "...",
-      description: "",
+      title: "Filmmaker Reel",
+      subtitle: "Pablo Coronel",
+      description: "Reel",
       trailerUrl: "https://player.vimeo.com/video/758497058?h=8ab41ed5ad",
       criticText: "",
-      poster: "/posters-portfolio-pablo/reel.jpg",
+      poster: "/posters-portfolio/reel.png",
     },
   ],
   services: {
