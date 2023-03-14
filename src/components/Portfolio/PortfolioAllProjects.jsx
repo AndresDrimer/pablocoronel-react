@@ -19,10 +19,7 @@ export default function PortfolioAllProjects(props) {
 
         <NavLink to={ `portfolio/${it.id}/`} className="--portfolio-watch-trailer-btn">watch trailer</NavLink>
 
-        <button 
-            className="--portfolio-watch-trailer-btn"
-            onClick={()=> navigate(`portfolio/${it.id}`)}
-            >watch trailer</button>
+     
       </div>
     );
   });

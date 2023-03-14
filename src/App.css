@@ -501,7 +501,7 @@ nav {
   background-color: var(--color-celeste);
   border: none;
   color: azure;
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 .--portfolio-watch-trailer-btn:hover{
   border: 2px solid #070000;
@@ -521,12 +521,12 @@ nav {
   background-color: rgba(6, 101, 169, 0.99);
   background-blend-mode: multiply;
   position: relative;
-  margin-bottom:2rem;
+ 
 }
 .--portfolio-each-trailer-header h2{
   position: absolute;
   width:100%;
-  top:140px;
+  top:130px;
   left:0;
   color: azure;
   margin:auto;
@@ -538,8 +538,11 @@ nav {
   color: azure;
   background-color: #070000;
   border-radius: 5px;
-  border:none;
+  border:2px solid azure;
   padding:15px;
+  position: absolute;
+  top:10.7rem;
+  right:47%;
   
 }
 .--portfolio-go-back-btn:hover{
@@ -552,7 +555,7 @@ nav {
 .--portfolio-each-trailer-video{
   width:100vw;
   height:500px;
-  margin-top:2rem;
+
 }
 
 .--portfolio-each-video-sliders-and-text{
