@@ -1,66 +1,41 @@
-import { useState } from "react";
-import Nav from "./components/Nav";
 import data from "../data.js";
-import { BrowserRouter } from 'react-router-dom'
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 import "./App.css";
-import VideoBackground from "./components/VideoBackground";
-import About from "./components/About";
-import Works from "./components/Works";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Portfolio from './components/Portfolio'
 
-function App() {
-  
+/*components*/
+import EachWorks from "./components/Works/EachWork";
+import PortfolioEachTrailer from "./components/Portfolio/PortfolioEachTrailer";
+
+/* layouts*/
+import LayoutRoot from "./layouts/LayoutRoot/LayoutRoot";
+
+/*pages*/
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+
+export default function App() {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<LayoutRoot data={data} />}>
+        <Route index element={<Home data={data} />} />
+        <Route
+          path="portfolio/:id"
+          element={<PortfolioEachTrailer portfolio={data.portfolio} />}
+        />
+        <Route path="works/:id" element={<EachWorks works={data.works} />} />
+
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    )
+  );
   return (
-    <BrowserRouter>
     <div className="App">
-      
-      <Nav 
-      name={data.name} 
-      subtitle={data.subtitle} 
-      sections={data.sections} 
-      />
-      
-      <VideoBackground />
-      
-      <About
-        aboutPhoto={data.aboutPhoto}
-        logoPhoto={data.logoPhoto}
-        awardsLogo={data.awardsLogo}
-        aboutmeText={data.aboutmeText}
-        awards={data.awards}
-      /> 
-   
-     
-      <Services
-        title={data.services.title}
-        finalText={data.services.finalText}
-        eachService={data.services.eachService}
-      />
-      
-      <Portfolio 
-      portfolio={data.portfolio} 
-      />
-      
-      <Works 
-      works={data.works} 
-       />
-     
-     
-      <Contact 
-      contactInfo={data.contactInfo} 
-      />
-
-      <Footer
-        name={data.name}
-        subtitle={data.subtitle}
-        contactInfo={data.contactInfo}
-      />
+      <RouterProvider router={router} />
     </div>
-    </BrowserRouter>
   );
 }
-
-export default App;

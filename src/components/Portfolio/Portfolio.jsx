@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
-import PortfolioAllProjects from './PortfolioAllProjects'
-import PortfolioEachTrailer from './PortfolioEachTrailer'
+import PortfolioAllProjects from '../Portfolio/PortfolioAllProjects'
+import PortfolioEachTrailer from '../Portfolio/PortfolioEachTrailer'
 
 
 export default function Portfolio(props){
@@ -12,7 +12,7 @@ export default function Portfolio(props){
     <h2 className="--portfolio-title" id="portfolio"> PORTFOLIO</h2>
     <Routes>
       <Route path="/" element={<PortfolioAllProjects portfolio={props.portfolio}/>}></Route>
-      <Route path=":id" element={<PortfolioEachTrailer portfolio={props.portfolio} />}></Route>
+      <Route path="/:id" element={<PortfolioEachTrailer portfolio={props.portfolio} />}></Route>
     </Routes>
 
    

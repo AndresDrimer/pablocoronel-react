@@ -1,10 +1,14 @@
-import { useState } from "react";
-import recortePoster from "/poster-cqtvdr-recorte.jpg";
-export default function Works(props) {
-  const eachWork = props.works.map((it) => {
+import { NavLink, useNavigate, useParams } from "react-router-dom"
+
+
+export default function WorkAllWorks(props) {
+    const navigate = useNavigate();
+  const {id} = useParams();
+  const allWorks = props.works.map((it) => {
     const trailerStyle = {
       display: "block",
     };
+
 
     return (
       //this is a way to order odd items with image to to left, and evens to right; it´s quite verbose but couldn´t find a better way yet
@@ -16,18 +20,9 @@ export default function Works(props) {
               <h2 className="--works-title-work">{it.title.toUpperCase()}</h2>
               <h5 className="--works-subtitle">{it.subtitle.toUpperCase()}</h5>
               <p className="--works-paragraph">{it.description}</p>
+            <NavLink to="works/:id">watch movie</NavLink>
+              
 
-              <div className="--works-trailer-container">
-                <iframe
-                  src={it.trailerUrl}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <p className="--works-paragraph fade"><em>{it.criticText}</em></p>
-              <br />
             </div>
 
             <div
@@ -46,29 +41,20 @@ export default function Works(props) {
               <h2 className="--works-title-work">{it.title.toUpperCase()}</h2>
               <h5 className="--works-subtitle">{it.subtitle.toUpperCase()}</h5>
               <p className="--works-paragraph">{it.description}</p>
-              <div className="--works-trailer-container">
-                <iframe
-                  src={it.trailerUrl}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <p className="--works-paragraph fade"><em>{it.criticText}</em></p>
+              
               <br />
+              <button 
+            className="--portfolio-watch-trailer-btn"
+            onClick={()=> navigate(`/works/${it.id}`)}
+            ><a href="#works">watch movie</a></button>
             </div>
           </div>
         )}
       </>
     );
   });
-
   return (
-    <div id="works">
-      <br />
-      <h2 className="--works-title">WORKS</h2>
-      {eachWork}
-    </div>
-  );
+    <div> {allWorks} </div>
+  )
 }
+

@@ -88,7 +88,7 @@ export default {
 
   works: [
     {
-      id: 1,
+      id: 0,
       isSelected: false,
       title: "Cumbia que te vas de Ronda",
       subtitle: "2020, feature documentary",
@@ -101,7 +101,7 @@ export default {
       recortePoster: "/poster-cqtvdr-recorte.jpg",
     },
     {
-      id: 2,
+      id: 1,
       isSelected: false,
       title: "Cumbia la Reina",
       subtitle: "2015, feature documentary",
@@ -194,7 +194,7 @@ export default {
       title: "Filmmaker Reel",
       subtitle: "Pablo Coronel",
       description: "Reel",
-      trailerUrl: "https://player.vimeo.com/video/758497058?h=8ab41ed5ad",
+      trailerUrl: "https://www.youtube.com/embed/tJJU3NBAObY?controls=0",
       criticText: "",
       poster: "/posters-portfolio/reel.png",
     },

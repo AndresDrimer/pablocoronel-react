@@ -511,34 +511,71 @@ nav {
 }
 
 /*portfolio each trailer*/
-.--portfolio-each-trailer-container{
-  height:100vh;
+
+.--portfolio-each-trailer-header{
+  width:100vw;
+  height: 200px;
+  background-image:url(/posterVideoBack5.png);
+  background-position: fill;
+  z-index: -1;
+  background-color: rgba(6, 101, 169, 0.99);
+  background-blend-mode: multiply;
+  position: relative;
+  margin-bottom:2rem;
 }
+.--portfolio-each-trailer-header h2{
+  position: absolute;
+  width:100%;
+  top:140px;
+  left:0;
+  color: azure;
+  margin:auto;
+}
+
 .--portfolio-go-back-btn{
-  margin:20px;
-  margin-left: 80%;
+  margin:5px;
+  margin-left: 85%;
   color: azure;
   background-color: #070000;
   border-radius: 5px;
-  width:30px;
-  height:30px;
   border:none;
+  padding:15px;
+  
 }
 .--portfolio-go-back-btn:hover{
   border: 2px solid var(--color-celeste);
+  z-index:1;
 }
 .--portfolio-go-back-btn:active{
   background-color: gray;
 }
 .--portfolio-each-trailer-video{
-  width:60vw;
+  width:100vw;
   height:500px;
-  margin-top:4rem;
-}
-.--portfolio-eachvideo-text-container{
-  margin-top:4rem;
+  margin-top:2rem;
 }
 
+.--portfolio-each-video-sliders-and-text{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: 1rem 0;
+
+}
+.--portfolio-each-video-sliders-and-text img{
+  padding: 15px;
+  opacity:0.5;
+  
+}
+.--each-portfolio-btn-navigation{
+  background-color: transparent;
+  border: none;
+  color: none;
+}
+.arrow-other-side{
+  transform: rotate(180deg);
+}
 /*WORKS*/
 #works {
   scroll-margin-top: 30px;
@@ -607,13 +644,20 @@ nav {
 .--works-criticText {
   text-align: justify;
   width: 80%;
+  margin: 20px auto;
+  
+  padding-bottom: 40px; 
+}
+.--works-criticText {
+padding-top:40px;
 }
 .fade {
   color: var(--color-abrigo);
 }
 .--works-trailer-container {
-  margin: 20px auto;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
 }
 .--works-trailer-container > iframe {
   width: 100%;
@@ -777,4 +821,9 @@ footer {
   height: 150px;
   background-color: #222222;
   padding-top: 150px;
+}
+
+/*not found*/
+.not-found{
+margin-top:120px;
 }

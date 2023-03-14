@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from 'react-router-dom'
 
 export default function Nav(props) {
   const [checked, setChecked] = useState(false)
@@ -11,7 +12,7 @@ export default function Nav(props) {
     return <li 
     key={it.id}
     onClick={disappearMenu}
-    ><a href={`#${it.category}`}>{it.category.toUpperCase()}</a></li>;
+    ><NavLink to={`/#${it.category}`}>{it.category.toUpperCase()}</NavLink></li>;
   });
 
   return (
