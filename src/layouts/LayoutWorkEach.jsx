@@ -33,7 +33,7 @@ export default function PortfolioWorkEach(props) {
           className="--portfolio-each-video-sliders-and-text"
         >
         
-          <button  className="--each-portfolio-btn-navigation" onClick={() => navigate(`/works/${ id === 0 ? "1" : "0"}`)}><img src={next} width="50" className="arrow-other-side" /></button>
+          <button  className="--each-portfolio-btn-navigation" onClick={() => navigate(`/works/${ id === "0" ? "1" : "0"}`)}><img src={next} width="50" className="arrow-other-side" /></button>
           <div className="--portfolio-eachvideo-text-container">
             <h4>{props.works[id].title}</h4>
             <p className="--portfolio-subtitle">
@@ -43,7 +43,7 @@ export default function PortfolioWorkEach(props) {
               {props.works[id].criticText}
             </p>
             
-          </div><button className="--each-portfolio-btn-navigation" onClick={() => navigate(`/works/${ id > 2 ? "0" : Number(id)+1 }`)}><img src={next} width="50"  /></button>
+          </div><button className="--each-portfolio-btn-navigation" onClick={() => navigate(`/works/${ id === "0" ? "1" : "0"}`)}><img src={next} width="50"  /></button>
         </div>
         
       </div>
