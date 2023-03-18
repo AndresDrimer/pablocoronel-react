@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useParams, useNavigate, NavLink, Link } from "react-router-dom";
 import next from "/next.svg";
 export default function PortfolioEachTrailer(props) {

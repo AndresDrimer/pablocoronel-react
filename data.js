@@ -220,7 +220,7 @@ export default {
       },
       {
         id: 3,
-        title: "Post-production and project finalization:",
+        title: "Post-production and project finalization",
         description:
           "Captured footage organization, selection and editing. Sound mixing and colour correction.",
         image: "/services-svgs/edition.svg",

@@ -9,8 +9,9 @@ export default function Services(props) {
   const makeEachService = props.eachService.map((it) => {
     return (
       <div className="--services-cathegory-container" key={it.id}>
-        <img className="--services-cathegory-plus" src={doneImg} />
-        <p className="--services-each-description">{it.description}</p>
+        <img className="--services-cathegory-icon" src={doneImg} />
+      
+        <p className="--services-each-description"><span>{it.title}. </span><br />{it.description}</p>
       </div>
     );
   });

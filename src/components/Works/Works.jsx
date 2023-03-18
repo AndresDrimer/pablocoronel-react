@@ -19,9 +19,9 @@ export default function Works(props) {
               <h2 className="--works-title-work">{it.title.toUpperCase()}</h2>
               <h5 className="--works-subtitle">{it.subtitle.toUpperCase()}</h5>
               <p className="--works-paragraph">{it.description}</p>
-            <NavLink to="works/:id">watch movie</NavLink>
-              
-
+           
+            <NavLink to={ `works/${it.id}/`} className="--portfolio-watch-trailer-btn">watch movie</NavLink>
+            
             </div>
 
             <div
@@ -42,10 +42,9 @@ export default function Works(props) {
               <p className="--works-paragraph">{it.description}</p>
               
               <br />
-              <button 
-            className="--portfolio-watch-trailer-btn"
-            onClick={()=> navigate(`/works/${it.id}`)}
-            ><a href="#works">watch movie</a></button>
+              <NavLink to={ `works/${it.id}/`} className="--portfolio-watch-trailer-btn">watch movie</NavLink>
+                
+<br />
             </div>
           </div>
         )}

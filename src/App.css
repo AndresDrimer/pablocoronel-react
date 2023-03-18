@@ -434,13 +434,19 @@ nav {
   margin: 10px auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items:flex-start;
   width: 100%;
   padding-right: 40px;
+  
 }
-.--services-cathegory-plus {
-  width: 40px;
+.--services-cathegory-icon {
+  width: 30px;
   margin-right: 10px;
+  margin-top:20px;
+padding:5px 0;
+border: 2px solid azure;
+border-radius:15px;
+background-color: rgba(216, 216, 216, 0.1)
 }
 .--services-each-description {
   color: azure;
@@ -449,11 +455,17 @@ nav {
   align-self: center;
   font-weight: 600;
 }
+.--services-each-description span{
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
 .--services-final-text {
   color: azure;
   margin: 4rem 0 0 0;
   text-align: justify;
   font-weight: 600;
+  font-size:1.1rem;
 }
 
 /*PORTFOLIO*/
@@ -699,7 +711,18 @@ padding-top:40px;
     height: 600px;
   }
 }
+/*each works*/
+.--eachworks-criticText{
+color:grey;
+font-style: italic;
+margin: 10px auto 60px auto;
 
+}
+.--eachworks-title{
+  margin: 60px 0 40px 0;
+  font-size:2rem;
+  
+}
 /*CONTACT*/
 #contact {
   scroll-margin-top: 0px;

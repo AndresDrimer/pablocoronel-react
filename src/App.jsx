@@ -9,11 +9,11 @@ import {
 import "./App.css";
 
 /*components*/
-import EachWorks from "./components/Works/EachWork";
-import PortfolioEachTrailer from "./components/Portfolio/PortfolioEachTrailer";
 
 /* layouts*/
-import LayoutRoot from "./layouts/LayoutRoot/LayoutRoot";
+import LayoutRoot from "./layouts/LayoutRoot";
+import PortfolioEachTrailer from "./layouts/LayoutPortfolioEachTrailer";
+import WorkEach from './layouts/LayoutWorkEach'
 
 /*pages*/
 import Home from "./pages/Home";
@@ -21,22 +21,19 @@ import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
 
-export default function App() {
 
+export default function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<LayoutRoot data={data} />}>
-     
+
+      <Route path="/" element={<LayoutRoot data={data} />}>    
         <Route index element={<Home data={data} />} />
-       
         <Route
           path="portfolio/:id"
           element={<PortfolioEachTrailer portfolio={data.portfolio} />}
         />
-     
-        <Route path="works/:id" element={<EachWorks works={data.works} />} />
-
+        <Route path="works/:id" element={<WorkEach works={data.works} />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     )
