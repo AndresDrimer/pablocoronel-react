@@ -12,7 +12,7 @@ export default function Nav(props) {
     return <li 
     key={it.id}
     onClick={disappearMenu}
-    ><NavLink to={`/#${it.category}`}>{it.category.toUpperCase()}</NavLink></li>;
+    ><a href={`/#${it.category}`}>{it.category.toUpperCase()}</a></li>;
   });
 
   return (

@@ -229,12 +229,14 @@ nav {
 .--about-total-wrapper {
   padding: 0;
   margin: 0;
+  
 }
 
 @media (width>1400px) {
   .--about-total-wrapper {
     margin: auto;
     max-width: 75%;
+    
   }
 }
 
@@ -399,7 +401,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between
+  justify-content: center;
 }
 .--services-all-text-container {
   max-width: 40%;
@@ -496,12 +498,14 @@ nav {
 }
 .--portfolio-watch-trailer-btn{
   border-radius: 20px;
-  margin: -2rem 0 2rem 0;
+
   height:2rem;
   background-color: var(--color-celeste);
   border: none;
   color: azure;
   padding: 5px 10px;
+ 
+  
 }
 .--portfolio-watch-trailer-btn:hover{
   border: 2px solid #070000;
@@ -616,14 +620,24 @@ margin: 1rem 0;
   height: 100%;
   width: 100%;
   flex: 50%;
+  border:3px solid blue;
+  display:flex;
 }
 
 .--works-poster {
   width: 100%;
   height: 100%;
   object-fit: contain;
+ 
 }
-
+@media(width>1500px){
+  .--works-poster{
+    max-width:500px;
+  }
+  .--works-movie-poster-container{
+    justify-content:right;
+  }
+}
 .--works-movie-info-container {
   height: 100%;
   display: flex;
@@ -696,11 +710,11 @@ padding-top:40px;
   }
 }
 .--contact-total-container {
-  background-image: url("/vintage-lens.jpg");
+  background-image: url("/footer-photos/2.jpeg");
   background-size: cover;
   width: 100%;
   height: 100%;
-  background-position: center;
+  background-position:bottom ;
   background-repeat: no-repeat;
   z-index: 0;
   background-color: rgba(6, 101, 169, 0.99);
@@ -760,6 +774,7 @@ footer {
   width: 100vw;
   height: 100%;
 }
+
 .--footer-title-and-subtitle-container {
   background-color: #070000;
   height: 3.5rem;
@@ -786,6 +801,30 @@ footer {
   margin-top: -25px;
   color: azure;
 }
+.--footer-photos-container{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.--footer-photo{
+width: 20vw;
+height: 150px;
+margin:5px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: rgba(6, 101, 169, 0.99);
+background-blend-mode: multiply;
+flex:1;
+background-image: url("/footer-photos/5-detail4.jpg");
+}
+
+
+
+
+
 .--footer-p {
   color: azure;
   font-size: 0.7rem;
@@ -811,11 +850,17 @@ footer {
   justify-content: center;
 }
 .footer-first-level-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+@media(width<778px){
+  .footer-first-level-container {
+  flex-direction: column;
+}
+
+}
+
 #--footer-location {
   margin-top: 1rem;
 }
@@ -825,8 +870,11 @@ footer {
   background-color: #222222;
   padding-top: 150px;
 }
-
+#copyright{
+  font-size: 0.8rem;
+}
 /*not found*/
 .not-found{
-margin-top:120px;
+margin-top:240px;
+height:500px;
 }
