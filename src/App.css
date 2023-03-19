@@ -14,6 +14,7 @@
   --letter-spacing-titles: 0.8rem;
   scroll-behavior: smooth;
 }
+body{min-width: 320px;}
 a {
   text-decoration: none;
   color: inherit;
