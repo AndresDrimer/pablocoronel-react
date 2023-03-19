@@ -247,7 +247,7 @@ nav {
 .--about-conditional-text-content{
   text-justify: left;
   margin:auto;
-
+  min-width:240px;
 }
 .--about-conditional-text-title{
   
