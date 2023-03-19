@@ -3,9 +3,7 @@ import fbIcon from "/fb-icon.svg";
 import phoneIcon from "/cell-phone.svg";
 import mailIcon from "/mail-icon.svg";
 import locationIcon from "/location-icon.svg";
-import photo1 from "/footer-photos/1.jpeg";
-import photo2 from "/footer-photos/2.jpeg";
-import photo3 from "/footer-photos/3.jpeg";
+
 
 export default function Footer(props) {
   return (
@@ -40,14 +38,15 @@ export default function Footer(props) {
           <img src={mailIcon} className="--footer-icon-tel" />
           <p className="--footer-p"> {props.contactInfo.mail}</p>
         </div>
-      </div>
+      </div><br />
 
       <div className="--footer-p" id="copyright">
         <p>
-          <small></small>
+          
         </p>
       </div>
       <br />
+      
     </footer>
   );
 }
