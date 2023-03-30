@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function About(props) {
   const [textShown, setTextShown] = useState(true);
-  console.log(textShown)
+
   function toggleText() {
     setTextShown(prev => !prev);
 
@@ -46,7 +46,6 @@ export default function About(props) {
 
   function toggleHandler(){
     setTextShown(prev => !prev);
-    console.log(textShown)
   }
 
 

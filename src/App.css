@@ -21,6 +21,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 /*VIDEO*/
 
 .myvideo {
@@ -250,7 +251,7 @@ nav {
 .--about-conditional-text-content {
   text-justify: left;
   margin: auto;
-  min-width: 240px;
+  min-width: 240px; /*for safari fix*/
 }
 .--about-conditional-text-title {
   max-width: 90%;

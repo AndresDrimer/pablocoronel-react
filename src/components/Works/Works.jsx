@@ -14,7 +14,7 @@ export default function Works(props) {
  
     return (
  
-      <>
+      <div key={it.id}>
        { 
         (it.id + 1) % 2 === 0 ? (
           //it[1]
@@ -55,7 +55,7 @@ export default function Works(props) {
           </div>
         )
       }
-      </>
+      </div>
     );
   });
 
