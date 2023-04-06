@@ -310,7 +310,7 @@ nav {
   display: flex;
   height: 100%;
   width: 90%;
-  flex-direction: row;
+  flex-direction: column;
   padding-left: 20px;
 }
 
@@ -320,10 +320,10 @@ nav {
     justify-content: center;
   }
 }
-@media (width<1700px) {
+@media (width>1400px) {
   .--about-container-for-two-elements {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     place-content: center;
   }
   .--about-photo {
@@ -417,16 +417,16 @@ nav {
   justify-content: center;
 }
 .--services-all-text-container {
-  max-width: 40%;
+  max-width: 70%;
   max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 80px 0;
 }
-@media (width<900px) {
+@media (width>900px) {
   .--services-all-text-container {
-    max-width: 70%;
+    max-width: 40%;
   }
 }
 .--services-logoImgs {
@@ -620,17 +620,17 @@ nav {
 .--works-whole-container {
   max-width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: flex-start;
 
   margin: auto;
 }
 
-@media (width<1150px) {
+@media (width>1150px) {
   .--works-whole-container {
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 2rem;
   }
