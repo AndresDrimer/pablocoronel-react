@@ -1,13 +1,14 @@
 import { useParams, useNavigate, NavLink, Link } from "react-router-dom";
 import next from "/next.svg";
 import mask from '/mask.svg'
+import ScrollToTop from "../components/ScrollToTop";
 export default function PortfolioWorkEach(props) {
   let { id } = useParams();
   const navigate = useNavigate();
   const numOfWorks = [];
 
   return (
-    <>
+    <><ScrollToTop>
       <div key={id} className="--portfolio-each-trailer-container">
         <div className="--portfolio-each-trailer-header">
           <h2 className="--portfolio-title">Works</h2>
@@ -59,7 +60,7 @@ export default function PortfolioWorkEach(props) {
         <p className="--eachworks-criticText">
           {props.works[id].criticText}
         </p></div>
-      </div>
+      </div></ScrollToTop>
     </>
   );
 }

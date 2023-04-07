@@ -1,12 +1,13 @@
 
 import { useParams, useNavigate, NavLink, Link } from "react-router-dom";
 import next from "/next.svg";
+import ScrollToTop from "../components/ScrollToTop";
 export default function PortfolioEachTrailer(props) {
   let { id } = useParams();
   const navigate = useNavigate();
 
   return (
-    <>
+    <><ScrollToTop>
       <div key={id} className="--portfolio-each-trailer-container">
         <div className="--portfolio-each-trailer-header">
           <h2 className="--portfolio-title">Portfolio</h2>
@@ -44,7 +45,7 @@ export default function PortfolioEachTrailer(props) {
           </div><button className="--each-portfolio-btn-navigation" onClick={() => navigate(`/portfolio/${ id > 7 ? "0" : Number(id)+1 }`)}><img src={next} width="50"  /></button>
         </div>
         
-      </div>
+      </div></ScrollToTop>
     </>
   );
 }
