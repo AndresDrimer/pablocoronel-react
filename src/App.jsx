@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 import "./App.css";
 
-/*components*/
 
 /* layouts*/
 import LayoutRoot from "./layouts/LayoutRoot";
@@ -27,7 +26,7 @@ export default function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
      
-      <Route path="/*" element={<LayoutRoot data={data} />}>  
+      <Route path="/" element={<LayoutRoot data={data} />}>  
         <Route index element={<Home data={data} />} 
         />
        
