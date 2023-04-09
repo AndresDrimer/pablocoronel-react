@@ -35,6 +35,7 @@ export default function App() {
           element={<PortfolioEachTrailer portfolio={data.portfolio} 
           />}
         />
+        
         <Route path="works/:id" element={<WorkEach works={data.works} />} 
         />
          

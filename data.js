@@ -19,7 +19,7 @@ export default {
     tel1: "+49 (0) 1792248351",
     tel2: "+351 915650360",
     mail: "pabloignaciocoronel@gmail.com",
-    youtube: "youtube.com/pablignacio",
+    youtube: "https://youtube.com/pablignacio",
     photoWeb: "https://500px.com/p/pablocoronel?view=photos",
     location: "Berlin, Deutschland",
   },
@@ -117,15 +117,6 @@ export default {
   portfolio: [
     {
       id: 0,
-      title: "Prosap",
-      subtitle: "Ministry of Agriculture, Argentina",
-      description: "Institutional video",
-      trailerUrl: "https://www.youtube.com/embed/YfID6E3z-Ok?controls=0",
-      criticText: " ",
-      poster: "/posters-portfolio/prosap.png",
-    },
-    {
-      id: 1,
       title: "Estampida",
       subtitle: "León Ferrari Foundation",
       description: "Institutional art video",
@@ -134,7 +125,7 @@ export default {
       poster: "/posters-portfolio/estampida.png",
     },
     {
-      id: 2,
+      id: 1,
       title: "Denver Farma SA",
       subtitle: "Argentine laboratory",
       description: "Institutional video",
@@ -144,13 +135,22 @@ export default {
       poster: "/posters-portfolio/denverfarma.png",
     },
     {
+      id: 2,
+      title: "Prosap",
+      subtitle: "Ministry of Agriculture, Argentina",
+      description: "Institutional video",
+      trailerUrl: "https://www.youtube.com/embed/YfID6E3z-Ok?controls=0",
+      criticText: " ",
+      poster: "/posters-portfolio/prosap.png",
+    },
+    {
       id: 3,
-      title: "90’s Pop Tour",
-      subtitle: "VEVO",
-      description: "Live concert",
-      trailerUrl: "https://www.youtube.com/embed/K4IEJM3XvXE?controls=0",
+      title: "Malagueña",
+      subtitle: "Mariachi Sol de Lisboa",
+      description: "Video clip",
+      trailerUrl: "https://www.youtube.com/embed/_TXC8Ho8tH8?controls=0",
       criticText: "",
-      poster: "/posters-portfolio/90pop.png",
+      poster: "/posters-portfolio/mariachis.png",
     },
     {
       id: 4,
@@ -164,6 +164,16 @@ export default {
     },
     {
       id: 5,
+      title: "90’s Pop Tour",
+      subtitle: "VEVO",
+      description: "Live concert",
+      trailerUrl: "https://www.youtube.com/embed/K4IEJM3XvXE?controls=0",
+      criticText: "",
+      poster: "/posters-portfolio/90pop.png",
+    },
+
+    {
+      id: 6,
       title: "Santiagueños",
       subtitle: "Canal Encuentro, Argentina ",
       description: "Documentary tv series",
@@ -172,7 +182,7 @@ export default {
       poster: "/posters-portfolio/santiaguenios.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "Ter Pressa",
       subtitle: "Diogo Picão",
       description: "Video clip",
@@ -180,15 +190,7 @@ export default {
       criticText: "",
       poster: "/posters-portfolio/terpressa.png",
     },
-    {
-      id: 7,
-      title: "Malagueña",
-      subtitle: "Mariachi Sol de Lisboa",
-      description: "Video clip",
-      trailerUrl: "https://www.youtube.com/embed/_TXC8Ho8tH8?controls=0",
-      criticText: "",
-      poster: "/posters-portfolio/mariachis.png",
-    },
+
     {
       id: 8,
       title: "Filmmaker Reel",

@@ -1,5 +1,5 @@
 import photoIcon from "/camera-icon.svg";
-import fbIcon from "/fb-icon.svg";
+import youtubeIcon from "/youtube.svg";
 import phoneIcon from "/cell-phone.svg";
 import mailIcon from "/mail-icon.svg";
 import locationIcon from "/location-icon.svg";
@@ -32,7 +32,7 @@ export default function Footer(props) {
           <p className="--footer-p"> {props.contactInfo.location}</p>
         </div>
         <a href={props.contactInfo.youtube}>
-          <img src={fbIcon} className="--footer-icon" />
+          <img src={youtubeIcon} className="--footer-icon" />
         </a>
         <div className="--foter-icon-text-container">
           <img src={mailIcon} className="--footer-icon-tel" />

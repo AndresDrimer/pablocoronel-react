@@ -55,11 +55,11 @@ export default function PortfolioWorkEach(props) {
           </div>
         </div>
         <div className="--eachwork-description">
-        <p className="--works-paragraph">{props.works[id].description}</p>
-        <img src={mask} alt="" width="25" className="--eachwork-mask-icon" />
+     
+     
         <p className="--eachworks-criticText">
           {props.works[id].criticText}
-        </p></div>
+        </p>   <img src={mask} alt="" width="25" className="--eachwork-mask-icon" /></div>
       </div></ScrollToTop>
     </>
   );

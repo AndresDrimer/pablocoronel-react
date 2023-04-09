@@ -18,7 +18,7 @@ export default function Nav(props) {
   return (
     <nav id="nav">
       <div>
-        <h1 className="--nav-title"> <a href="#video">{props.name.toUpperCase()}</a></h1>
+        <h1 className="--nav-title"> <a href="/">{props.name.toUpperCase()}</a></h1>
         <h3 className="--nav-subtitle">{props.subtitle.toUpperCase()}</h3>
       </div>
 

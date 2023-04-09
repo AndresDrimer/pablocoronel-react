@@ -17,7 +17,7 @@ export default function PortfolioAllProjects(props) {
           <p className="--portfolio-description">{it.description}</p>
         </div>
 
-        <NavLink to={ `portfolio/${it.id}/`} className="--portfolio-watch-trailer-btn">watch trailer</NavLink>
+        <NavLink to={ `portfolio/${it.id}/`} className="--portfolio-watch-trailer-btn">watch movie</NavLink>
 
      
       </div>
