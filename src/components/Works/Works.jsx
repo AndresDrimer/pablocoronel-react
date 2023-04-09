@@ -41,7 +41,7 @@ export default function Works(props) {
 
       <div className="--work-movie2">
         <div className="--work-text">
-          <h2 className="--works-title-work">
+          <h2 className="--works-title-work" id="--work-2nd-title">
             {props.works[1].title.toUpperCase()}
           </h2>
           <h5 className="--works-subtitle">

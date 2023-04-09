@@ -9,7 +9,7 @@ export default {
     { category: "works", id: 4 },
     { category: "contact", id: 5 },
   ],
-  aboutPhoto: "/aboutmephoto-nobg.png",
+  aboutPhoto: "/about-me-photo-2.png",
   logoPhoto: "/logo.png",
   awardsLogo: "/award.svg",
   posterVideoThumbnail: "/poster-video-thumbnail.png",
