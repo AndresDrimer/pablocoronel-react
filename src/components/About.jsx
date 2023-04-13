@@ -22,7 +22,7 @@ export default function About(props) {
   const awardsText = props.awards.map((it) => {
     return (
       <>
-        <ul className="--about-each-full-prize">
+        <ul className="--about-each-full-prize" key={it}>
           <li className="--about-prizes-lis">
             <strong className="--about-prizes-opus-title">
               {it.opus.toUpperCase()}{" "}
