@@ -32,7 +32,7 @@ export default function PortfolioEachTrailer(props) {
         <div
           className="--portfolio-each-video-sliders-and-text"
         >
-        
+        {/* improve for next version: onCLick function not hardcoded numbers*/}
           <button  className="--each-portfolio-btn-navigation" onClick={() => navigate(`/portfolio/${ id < 1 ? "8" : id-1}`)}><img src={next} width="50" className="arrow-other-side" /></button>
           <div className="--portfolio-eachvideo-text-container">
             <h4>{props.portfolio[id].title}</h4>
