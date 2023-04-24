@@ -312,6 +312,7 @@ nav {
 
 .--about-photo {
   max-width: 250px;
+  max-height:auto;
 }
 @media (width>700px) {
   .--about-photo {
@@ -332,7 +333,6 @@ nav {
   .--about-photo {
     max-width: 400px;
     object-fit: contain;
-    max-height:auto;
   }
   .--about-conditional-text-content {
     padding-bottom: 20px;
@@ -888,10 +888,9 @@ footer {
 }
 .footer-first-level-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-height:fit-content;
 }
 @media (width>778px) {
   .footer-first-level-container {
