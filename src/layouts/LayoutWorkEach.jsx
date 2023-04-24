@@ -35,23 +35,23 @@ export default function PortfolioWorkEach(props) {
 
         <div className="--eachwork-each-video-sliders-and-text">
           <div className="--eachwork-header-article">
-            <button
+           {/* <button
               className="--each-portfolio-btn-navigation"
               onClick={() => navigate(`/works/${id === "0" ? "1" : "0"}`)}
             >
               <img src={next} width="50" className="arrow-other-side" />
-            </button>
+  </button> */}
             <div className="--eachwork-eachvideo-text-container">
               <h4>{props.works[id].title}</h4>
               <p className="--portfolio-subtitle">{props.works[id].subtitle}</p>
              
             </div>
-            <button
+            {/*<button
               className="--each-portfolio-btn-navigation"
               onClick={() => navigate(`/works/${id === "0" ? "1" : "0"}`)}
             >
               <img src={next} width="50" />
-            </button>
+</button>*/}
           </div>
         </div>
         <div className="--eachwork-description">

@@ -332,6 +332,7 @@ nav {
   .--about-photo {
     max-width: 400px;
     object-fit: contain;
+    max-height:auto;
   }
   .--about-conditional-text-content {
     padding-bottom: 20px;
@@ -890,6 +891,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  max-height:fit-content;
 }
 @media (width>778px) {
   .footer-first-level-container {
