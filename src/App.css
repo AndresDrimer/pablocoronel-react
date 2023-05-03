@@ -313,7 +313,7 @@ nav {
 
 .--about-photo {
   max-width: 250px;
-  max-height:auto;
+ height:auto;
 }
 @media (width>700px) {
   .--about-photo {
