@@ -302,7 +302,8 @@ nav {
 .--about-cont-img {
   display: flex;
   justify-content: center;
-  flex: 0 0 auto;
+  padding-top: calc(100% / (16/9));
+
 }
 
 .--about-conditional-text-containers {
@@ -314,7 +315,8 @@ nav {
 .--about-photo {
   max-width: 250px;
  height:auto;
- flex: 0 0 auto;
+flex: 0 0 auto;
+ 
 }
 @media (width>700px) {
   .--about-photo {
@@ -739,7 +741,7 @@ nav {
 }
 /*CONTACT*/
 #contact {
-  scroll-margin-top: 92px;
+  scroll-margin-top: 110px;
 }
 @media (width>500px) {
   #contact {
@@ -843,20 +845,24 @@ footer {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  color: var(--color-abrigo);
+  position: relative;
 }
 .--footer-photo {
-  width: 20vw;
+  width: 100vw;
   height: 150px;
   margin: 5px;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  border:3px solid blue;
   background-repeat: no-repeat;
   background-color: rgba(6, 101, 169, 0.99);
   background-blend-mode: multiply;
   flex: 1;
   background-image: url("/footer-photos/5-detail4.jpg");
+  position:absolute
 }
 .--footer-hr {
   width: 10px;
@@ -886,6 +892,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items:center;
 }
 .footer-first-level-container {
   display: flex;
@@ -893,6 +900,10 @@ footer {
   justify-content: center;
   align-items: center;
   height:auto;
+  
+}
+#fotoIcon{
+  order:-1;
 }
 @media (width>778px) {
   .footer-first-level-container {
