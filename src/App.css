@@ -888,10 +888,10 @@ footer {
 }
 .footer-first-level-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  max-height: 30vh ; 
+  height:auto;
 }
 @media (width>778px) {
   .footer-first-level-container {

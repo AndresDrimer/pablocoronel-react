@@ -38,14 +38,7 @@ export default function Footer(props) {
           <img src={mailIcon} className="--footer-icon-tel" />
           <p className="--footer-p"> {props.contactInfo.mail}</p>
         </div>
-      </div><br />
-
-      <div className="--footer-p" id="copyright">
-        <p>
-          
-        </p>
       </div>
-      <br />
       
     </footer>
   );
