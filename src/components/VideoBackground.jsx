@@ -10,7 +10,7 @@ export default function VideoBackground(){
     return(
         <>
         <div className='myvideo' id="video">
-        <video src={videoUrl} autoPlay="autoplay" loop playsinline muted poster={posterVideoThumbnail}/></div>
+        <video src={videoUrl} muted autoplay playsinline poster={posterVideoThumbnail}/></div>
         </>
     )
 }
