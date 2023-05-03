@@ -302,7 +302,7 @@ nav {
 .--about-cont-img {
   display: flex;
   justify-content: center;
-  padding-top: calc(100% / (16/9));
+ 
 
 }
 
@@ -314,8 +314,8 @@ nav {
 
 .--about-photo {
   max-width: 250px;
- height:auto;
-flex: 0 0 auto;
+ max-height:400px;
+
  
 }
 @media (width>700px) {
