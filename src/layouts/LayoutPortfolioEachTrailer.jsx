@@ -2,6 +2,8 @@
 import { useParams, useNavigate, NavLink, Link } from "react-router-dom";
 import next from "/next.svg";
 import ScrollToTop from "../components/ScrollToTop";
+
+
 export default function PortfolioEachTrailer(props) {
   let { id } = useParams();
   const navigate = useNavigate();

@@ -65,7 +65,9 @@ nav {
   color: var(--color-abrigo);
   letter-spacing: 0rem;
 }
-
+.--nav-title:hover{
+  scale:1.05;
+}
 .--nav-subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -98,7 +100,9 @@ nav {
   overflow: hidden;
   font-size: 1rem;
 }
-
+.menu > li:hover{
+  scale:1.05;
+}
 .menu-button-container {
   display: none;
   height: 100%;
@@ -759,7 +763,7 @@ nav {
   z-index: 0;
   background-color: rgba(6, 101, 169, 0.99);
   background-blend-mode: multiply;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .--contact-title {
   color: azure;
@@ -832,6 +836,9 @@ footer {
   line-height: 0.5rem;
   color: var(--color-abrigo);
   letter-spacing: 0rem;
+}
+.--footer-title:hover{
+  scale:1.05;
 }
 .--footer-subtitle {
   font-family: "Open Sans", sans-serif;

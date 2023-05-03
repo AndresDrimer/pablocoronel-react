@@ -6,6 +6,10 @@ import {
   RouterProvider,
   useLocation
 } from "react-router-dom";
+
+
+
+
 import "./App.css";
 
 
@@ -22,6 +26,7 @@ import ScrollToTop from './components/ScrollToTop.jsx'
 
 
 export default function App() {
+  
 
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -42,10 +47,17 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
       </Route>
     )
-  );
+  ); 
+
+
+
+
+
   return (
     <div className="App">
       <RouterProvider router={router} />
     </div>
   );
 }
+
+

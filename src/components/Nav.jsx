@@ -12,6 +12,7 @@ export default function Nav(props) {
     return <li 
     key={it.id}
     onClick={disappearMenu}
+    className="--nav-each-li"
     ><a href={`/#${it.category}`}>{it.category.toUpperCase()}</a></li>;
   });
 
