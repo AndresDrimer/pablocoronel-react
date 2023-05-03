@@ -302,6 +302,7 @@ nav {
 .--about-cont-img {
   display: flex;
   justify-content: center;
+  flex: 0 0 auto;
 }
 
 .--about-conditional-text-containers {
@@ -327,7 +328,6 @@ nav {
     align-content: center;
   }
   .--about-cont-img {
-    display: flex;
     align-items: flex-end;
   }
   .--about-photo {
