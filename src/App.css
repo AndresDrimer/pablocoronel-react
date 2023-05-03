@@ -314,6 +314,7 @@ nav {
 .--about-photo {
   max-width: 250px;
  height:auto;
+ flex: 0 0 auto;
 }
 @media (width>700px) {
   .--about-photo {
