@@ -309,7 +309,7 @@ nav {
 .--about-conditional-text-containers {
   max-width: 600px;
   margin: 0 auto;
-  text-align: justify;
+  text-align: left;
 }
 
 .--about-photo {
@@ -457,6 +457,7 @@ nav {
   text-align: justify;
   font-weight: 600;
   font-size: 1.1rem;
+  text-align: left;
 }
 
 /*PORTFOLIO*/
