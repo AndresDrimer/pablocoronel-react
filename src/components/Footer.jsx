@@ -22,7 +22,7 @@ export default function Footer(props) {
         <div className="--foter-icon-text-container">
           <img src={phoneIcon} className="--footer-icon-tel" />
 
-          <p className="--footer-p"> {props.contactInfo.tel1}</p>
+          <p className="--footer-p"> <a href="https://api.whatsapp.com/send?phone=4901792248351&text=Hello%20Pablo">{props.contactInfo.tel1}</a></p>
         </div>
 
 
@@ -35,7 +35,7 @@ export default function Footer(props) {
 
         <div className="--foter-icon-text-container">
           <img src={mailIcon} className="--footer-icon-tel" />
-          <p className="--footer-p"> {props.contactInfo.mail}</p>
+          <p className="--footer-p"><a href="mailto:pabloignaciocoronel@gmail.com"> {props.contactInfo.mail}</a></p>
         </div>
 
 
