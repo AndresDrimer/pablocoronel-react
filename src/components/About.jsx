@@ -33,7 +33,7 @@ export default function About(props) {
           {it.prizes.map((it) => {
             return (
               <p className="--about-awards-paragraph" key={it.id}>
-                · {it.date} // <strong>{it.prizeName}</strong> - {it.place}
+                · <strong>{it.prizeName}</strong> - {it.place} - {it.date} 
               </p>
             );
           })}
