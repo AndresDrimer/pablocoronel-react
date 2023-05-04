@@ -609,6 +609,7 @@ nav {
   display: flex;
   flex-direction: column;
   width: 100%;
+  
 }
 .--work-movie1,
 .--work-movie2 {
