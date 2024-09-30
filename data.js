@@ -16,7 +16,7 @@ export default {
   aboutmeText:
     "My interest in cinematographic processes has led me, during my 20 years in the audiovisual world, to develop my professional skills in editing, photography and directing. I have directed music videos institutional videos, documentaries, tv series, I have shot live concerts, documentaries, tv shows and I have edited all kinds of audiovisual formats (fiction films, tv shows, tv series, music videos, video art, etc...); but my desire to tell stories focused me to make my own documentary films. As a filmmaker, telling documentary stories is what motivates me the most. I love my job and I take every project as a new challenge. I like my work to be as perfect as possible according to the tools and time available for each of them.",
   contactInfo: {
-    tel1: "+49 (0) 1792248351",
+    tel1: "+49 1512 9006515",
     tel2: "+351 915650360",
     mail: "pabloignaciocoronel@gmail.com",
     youtube: "https://youtube.com/pablignacio",

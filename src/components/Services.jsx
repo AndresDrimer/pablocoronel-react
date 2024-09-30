@@ -8,9 +8,7 @@ import logo from '/logo.png'
 export default function Services(props) {
   const makeEachService = props.eachService.map((it) => {
     return (
-      <div className="--services-cathegory-container" key={it.id}>
-        <img className="--services-cathegory-icon" src={doneImg} />
-      
+      <div className="--services-cathegory-container" key={it.id}>     
         <p className="--services-each-description"><span>{it.title}. </span><br />{it.description}</p>
       </div>
     );
