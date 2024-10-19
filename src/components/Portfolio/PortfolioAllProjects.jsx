@@ -8,7 +8,7 @@ export default function PortfolioAllProjects(props) {
     const portfolioMakeGrid = props.portfolio.map((it) => {
       return (
       <div key={it.id}>
-        <img src={it.poster} className="--portfolio-posters" />
+        <img src={it.poster} className="--portfolio-posters" alt="portfolio poster" />
         <div className="--portfolio-eachposter-text-container">
           <h4>{it.title}</h4>
           <p className="--portfolio-subtitle">{it.subtitle}</p>

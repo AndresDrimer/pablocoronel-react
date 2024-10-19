@@ -59,7 +59,7 @@ export default function PortfolioWorkEach(props) {
      
         <p className="--eachworks-criticText">
           {props.works[id].criticText}
-        </p>   <img src={mask} alt="" width="25" className="--eachwork-mask-icon" /></div>
+        </p>   <img src={mask} alt="mask icon" width="25" className="--eachwork-mask-icon" /></div>
       </div></ScrollToTop>
     </>
   );

@@ -35,7 +35,7 @@ export default function PortfolioEachTrailer(props) {
           className="--portfolio-each-video-sliders-and-text"
         >
         {/* improve for next version: onCLick function not hardcoded numbers*/}
-          <button  className="--each-portfolio-btn-navigation" onClick={() => navigate(`/portfolio/${ id < 1 ? "8" : id-1}`)}><img src={next} width="50" className="arrow-other-side" /></button>
+          <button  className="--each-portfolio-btn-navigation" onClick={() => navigate(`/portfolio/${ id < 1 ? "8" : id-1}`)}><img src={next} width="50" className="arrow-other-side" alt="next icon" /></button>
           <div className="--portfolio-eachvideo-text-container">
             <h4>{props.portfolio[id].title}</h4>
             <p className="--portfolio-subtitle">
@@ -44,7 +44,7 @@ export default function PortfolioEachTrailer(props) {
             <p className="--portfolio-description">
               {props.portfolio[id].description}
             </p>
-          </div><button className="--each-portfolio-btn-navigation" onClick={() => navigate(`/portfolio/${ id > 7 ? "0" : Number(id)+1 }`)}><img src={next} width="50"  /></button>
+          </div><button className="--each-portfolio-btn-navigation" onClick={() => navigate(`/portfolio/${ id > 7 ? "0" : Number(id)+1 }`)}><img src={next} width="50"  alt="next icon 2" /></button>
         </div>
         
       </div></ScrollToTop>

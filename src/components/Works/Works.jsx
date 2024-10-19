@@ -34,7 +34,7 @@ export default function Works(props) {
 
           <div className="--work-poster">
             
-            <img src={props.works[0].poster} className="--works-poster" />
+            <img src={props.works[0].poster} className="--works-poster" alt="work 1 poster" />
           </div>
         </div>
       
@@ -61,7 +61,7 @@ export default function Works(props) {
 
         <div className="--work-poster" id="work-poster-left">
          
-          <img src={props.works[1].poster} className="--works-poster" />
+          <img src={props.works[1].poster} className="--works-poster" alt="works 2 poster" />
         </div>
       </div>
 

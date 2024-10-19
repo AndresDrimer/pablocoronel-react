@@ -61,7 +61,7 @@ export default function About(props) {
       <div className={`--about-toggler${!textShown ? "awards" : ""}`} onClick={toggleHandler}>
       
       <img className={`--about-toggler-notch${!textShown ? "awards" : ""}`}
-       src={textShown ? props.logoPhoto : props.awardsLogo}/>
+       src={textShown ? props.logoPhoto : props.awardsLogo} alt="about img" />
       </div>
 
 
@@ -76,7 +76,7 @@ export default function About(props) {
           {!textShown && awardsText} </p>
         </div>
         <div className="--about-cont-img">
-          <img src={props.aboutPhoto} className="--about-photo" />
+          <img src={props.aboutPhoto} className="--about-photo" alt="pablo coronel photo" />
         </div>
       </div>
     </div>
