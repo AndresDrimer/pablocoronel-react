@@ -21,11 +21,11 @@ export default function Footer(props) {
 
         <div className="--foter-icon-text-container">
           <img src={phoneIcon} className="--footer-icon-tel" alt="phone icon" />
-
-          <p className="--footer-p"> <a href="https://api.whatsapp.com/send?phone=4901792248351&text=Hello%20Pablo" role="link" aria-label="go to whastapp">{props.contactInfo.tel1}</a></p>
+    {/*   ojo, tel hardcodeado aqui   */}
+          <p className="--footer-p"> <a href="https://api.whatsapp.com/send?phone=4915129006515&text=Hello%20Pablo" role="link" aria-label="go to whastapp">{props.contactInfo.tel1}</a></p>
         </div>
 
-
+  
 
         <div className="--foter-icon-text-container">
           <img src={locationIcon} className="--footer-icon-tel" alt="footer icon tel" />
