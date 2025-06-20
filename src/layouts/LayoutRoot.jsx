@@ -19,7 +19,9 @@ export default function LayoutRoot(props) {
     subtitle={props.data.subtitle}
     contactInfo={props.data.contactInfo}
   />
-
+  
+<div id="firmaCont"> <p id="firma">PABLO CORONEL © <a href="https://adrimer.com.ar/" target="_blank"
+        rel="noopener noreferrer" aria-label="ir a página desarrollador">Built by A. Drimer</a></p></div>
 </div>
   );
 }

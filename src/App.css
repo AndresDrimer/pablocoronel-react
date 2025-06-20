@@ -939,3 +939,16 @@ footer {
   margin-top: 240px;
   height: 500px;
 }
+
+#firma{
+   font-weight: 500;
+     font-size: 0.75rem;
+      text-align: center;
+}
+#firmaCont{
+  padding:0;
+  margin:0;
+}
+.--contact-btn-send{
+  cursor:pointer;
+}
